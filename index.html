@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
 </head>
 <body>
-    <header class="main-header">
-        <nav class="main-navigation">
-            <a class="main-header-logo">
-                <img src="img/logo.png" width="155" height="65" alt="Логотип магазина «Glacy shop»"></a>
-            <ul class="site-navigation__list">
-                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="catalog.html">Каталог</a></li>
-                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="info.html">Доставка и оплата</a></li>
-                <li class="site-navigation-list__item"><a class="site-navigation-list__link" href="about-us">О компании</a></li>
-            </ul>
-        </nav>
-        <nav class="user-navigation"> 
-            <button type="button" class="user-navigation__search-btn">Поиск</button>
-            <ul class="user-navigation__list">
-                <li class="user-navigation-list__item"><a class="user-navigation-list__link" href="cabinet.html">Вход</a></li>
-                <li class="user-navigation-list__item"><a class="user-navigation-list__link" href="basket.html">Пусто</a></li>
-            </ul>
-            <p class="about-us">C 10 до 2, ежедневно<br><span class="phone-number">8 812 450-25-25</span></p>
-        </nav>
-    </header>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo"><img src="img/logo.png" width="155" height="65" alt="Логотип магазина «Glacy shop»"></a>
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item"><a class="site-navigation__link" href="catalog.html">Каталог</a>
+          <dl class="main-navigation__dropwodn-item"><a class="site-navigation__dropdown-item-link">Новинки</a></dl>
+          <ul class="main-navigation__dropwodn-list">
+
+            <li class="main-navigation__dropdown-item"><a class="site-navigation__dropdown-item-link">Сливочное</a></li>
+            <li class="main-navigation__dropdown-item"><a class="site-navigation__dropdown-item-link">Щербет</a></li>
+            <li class="main-navigation__dropdown-item"><a class="site-navigation__dropdown-item-link">Фруктовый лед</a></li>
+            <li class="main-navigation__dropdown-item"><a class="site-navigation__dropdown-item-link">Мелорин</a></li>
+          </ul></li>
+        <li class="main-navigation__item"><a class="site-navigation__link" href="info.html">Доставка и оплата</a></li>
+        <li class="main-navigation__item"><a class="site-navigation__link" href="about-us">О компании</a></li>
+      </ul>
+        
+      <div class="user-navigation"> 
+        <button type="button" class="user-navigation__search-btn">Поиск по каталогу</button>
+        <ul class="user-navigation__list">
+          <li class="user-navigation__item"><a class="user-navigation__link" href="cabinet.html">Вход</a></li>
+          <li class="user-navigation__item"><a class="user-navigation__link" href="basket.html">Корзина</a></li>
+        </ul>
+      </div>
+    </nav>  
+    <p class="schedule-and-contacts">C 10 до 2, ежедневно <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a></p>
+  </header>
 </body>
 </html>
