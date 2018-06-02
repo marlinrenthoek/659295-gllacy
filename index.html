@@ -14,9 +14,9 @@
       <a class="main-header-logo"><img src="img/logo.png" width="155" height="65" alt="Логотип магазина «Glacy shop»"></a>
       <ul class="site-navigation">
         <li class="site-navigation__item"><a class="site-navigation__link" href="catalog.html">Каталог</a>
-          <ul class="site-navigation__dropdown-list hidden">
+          <ul class="site-navigation__dropdown-list visually-hidden">
             <li class="site-navigation__dropdown-item"><a class="site-navigation__dropdown-item-link"><b>Новинки</b></a></li>
-            <li class="site-navigation__dropdown-item"><a class="site-navigation__dropdown-item-link">Сливочное</a></li>
+            <li class="site-navigation__dropdown-item"><a class="site-navigation__dropdown-item-link" href="catalog.html">Сливочное</a></li>
             <li class="site-navigation__dropdown-item"><a class="site-navigation__dropdown-item-link">Щербет</a></li>
             <li class="site-navigation__dropdown-item"><a class="site-navigation__dropdown-item-link">Фруктовый лед</a></li>
             <li class="site-navigation__dropdown-item"><a class="site-navigation__dropdown-item-link">Мелорин</a></li>
@@ -30,12 +30,12 @@
     <div class="interactive-menu">
        
       <button class="interactive-menu__search-btn">Поиск по каталогу</button>
-      <input  class="interactive-menu__search-field visually-hidden" type="text" id="search" value="что ищем">
+      <input  class="interactive-menu__search-field visually-hidden" type="text" id="search" placeholder="что ищем">
       
       <button class="interactive-menu__login-btn" type="button">Вход</button>
       <form class="interactive-menu__login-form visually-hidden">
           <label for="interactive-menu__mail"></label>
-          <input type="text" value="Электронная почта" id="interactive-menu__mail">
+          <input type="text" placeholder="Электронная почта" id="interactive-menu__mail">
       
           <label for="interactive-menu__password"></label>
           <input type="password" id="interactive-menu__password" value="Пароль">
@@ -183,9 +183,9 @@
       
       <form class="feedback-form visually-hidden">
         <h3>Мы обязательно вам ответим!</h3>
-        <input type="text" value="Как вас зовут">
-        <input type="text" value="Ваша почта для ответа?">
-        <textarea>"Напишите что-нибудь..."</textarea>
+        <input type="text" placeholder="Как вас зовут">
+        <input type="text" placeholder="Ваша почта для ответа?">
+        <textarea placeholder="Напишите что-нибудь..."></textarea>
         <button type="submit">Отправить</button>
       </form>
     </section>

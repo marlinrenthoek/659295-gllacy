@@ -109,19 +109,19 @@
         
         <li class="picking-section__item">
           <p class="picking-section__text">Жирность:</p>
-          <input type="radio" value="0%">
-          <input type="radio" value="до 10%">
-          <input type="radio" value="до 30%" checked>
-          <input type="radio" value="выше 30%">  
+          <label for="0%">0%</label><input type="radio" name="fat-content" id="0%" value="0%">
+          <label for="to_10%">до 10%</label><input type="radio" name="fat-content" id="to_10%" value="to_10%">
+          <label for="to_30%">до 30%</label><input type="radio" name="fat-content" id="to_30%" value="to_30%" checked>
+          <label for="from_30%">выше 30%</label><input type="radio" name="fat-content" id="from_30%" value="from_30%">  
         </li>
 
         <li class="picking-section__item">
-          <p class="picking-section__text">Наполнители:></p>
-          <input type="checkbox" value="шоколадные" checked>
-          <input type="checkbox" value="сахарные присыпки" checked>
-          <input type="checkbox" value="фрукты">
-          <input type="checkbox" value="сиропы">
-          <input type="checkbox" value="джемы">
+          <p class="picking-section__text">Наполнители:</p>
+          <label for="chocolate">шоколадные</label><input type="checkbox" id="chocolate" checked>
+          <label for="sugar">сахарные присыпки</label><input type="checkbox" id="sugar" checked>
+          <label for="fruit">фрукты</label><input type="checkbox" id="fruit">
+          <label for="syrup">сиропы</label><input type="checkbox" id="syrup">
+          <label for="jam">джемы</label><input type="checkbox" id="jam">
         </li>
       </ul>
       <button type="submit">Применить</button>
@@ -212,16 +212,16 @@
           <a class="pagination__link">1</a>
         </li>
         <li class="pagination__item">
-          <a class="pagination__link">2</a>
+          <a class="pagination__link" href="#">2</a>
         </li>
         <li class="pagination__item">
-          <a class="pagination__link">3</a>
+          <a class="pagination__link" href="#">3</a>
         </li>   
         <li class="pagination__item">
-          <a class="pagination__link">4</a>
+          <a class="pagination__link" href="#">4</a>
         </li>
         <li class="pagination__item">
-          <a class="pagination__link">5</a>
+          <a class="pagination__link" href="#">5</a>
         </li>
       </ul>
     </nav>
