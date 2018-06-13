@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Gllacy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
   
 </head>
 
@@ -46,53 +47,61 @@
 
     <div class="interactive-menu">
        
-      <a class="interactive-menu__link button href="#"">Поиск по каталогу</a>
-      <input  class="interactive-menu__search-field" type="text" id="search" value="что ищем">
+      <a class="interactive-menu__link button" href="#">Поиск по каталогу</a>
+
+      <label class="interactive-menu__label" for="search">Что ищем</label>
+      <input class="interactive-menu__search-field" type="text" id="search">
       
       <a class="interactive-menu__link button" href="#">Вход</a>
+
       <form class="interactive-menu__login-form">
-          <label for="interactive-menu__mail"></label>
-          <input type="text" value="Электронная почта" id="interactive-menu__mail">
-      
-          <label for="interactive-menu__password"></label>
-          <input type="password" id="interactive-menu__password" value="Пароль">
-      
-          <button type="submit" class="interactive-menu__send-form-btn">Войти</button>
 
-          <a class="interactive-menu__forgot-password-link" href="#">Забыли пароль?</a>
+        <label for="interactive-menu__mail">Электронная почта</label>
+        <input type="text" id="interactive-menu__mail">
+      
+        <label for="interactive-menu__password">Пароль</label>
+        <input type="password" id="interactive-menu__password">
+      
+        <button type="submit" class="interactive-menu__send-form-btn">Войти</button>
 
-          <a class="interactive-menu__registration-link" href="#">Новая регистрация</a>
-      </form>  
+      </form>
+
+      <a class="interactive-menu__forgot-password-link" href="#">Забыли пароль?</a>
+
+      <a class="interactive-menu__registration-link" href="#">Новая регистрация</a>
 
       <section class="basket">
 
         <a class="basket__link button" href="#">Корзина</a>
           
         <table class="basket__table">
-            <tr class="basket__row">
-              <td class="basket__del-button"><button class="basket__button" type="button">Удалить из корзины</button></td>
-              <td class="basket__img"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-              <td class="basket__item">Пломбир с апельсиновым джемом</td>
-              <td class="basket__amount">1,5 кг x </td>
-              <td class="basket__price">200 руб.</td>
-              <td class="basket__total-cost">300 руб.</td>
-            </tr>
-            <tr class="basket__row">
-              <td class="basket__del-button"><button type="button" class="basket__button">Удалить из корзины</button></td>
-              <td class="basket__img"><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-              <td class="basket__item">Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td class="basket__amount">1,5 кг x </td>
-              <td class="basket__price">300 руб.</td>
-              <td class="basket__total-cost">450 руб.</td>
-            </tr>
-            <tr class="basket__row">
-              <td class="basket__del-button"></td>
-              <td class="basket__img"></td>
-              <td class="basket__item"></td>
-              <td class="basket__amount"></td>
-              <td class="basket__price"></td>
-              <td class="basket__total-cost">Итого: 750руб.</td>
-            </tr>
+
+          <tr class="basket__row">
+            <td class="basket__del-button"><button class="basket__button" type="button">Удалить из корзины</button></td>
+            <td class="basket__img"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+            <td class="basket__item">Пломбир с апельсиновым джемом</td>
+            <td class="basket__amount">1,5 кг x </td>
+            <td class="basket__price">200 руб.</td>
+            <td class="basket__total-cost">300 руб.</td>
+          </tr>
+
+          <tr class="basket__row">
+            <td class="basket__del-button"><button type="button" class="basket__button">Удалить из корзины</button></td>
+            <td class="basket__img"><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+            <td class="basket__item">Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td class="basket__amount">1,5 кг x </td>
+            <td class="basket__price">300 руб.</td>
+            <td class="basket__total-cost">450 руб.</td>
+          </tr>
+
+          <tr class="basket__row">
+            <td class="basket__del-button"></td>
+            <td class="basket__img"></td>
+            <td class="basket__item"></td>
+            <td class="basket__amount"></td>
+            <td class="basket__price"></td>
+            <td class="basket__total-cost">Итого: 750руб.</td>
+          </tr>
   
         </table>
   
@@ -130,46 +139,46 @@
     <h1 class="container__header">Сливочное мороженое</h1>
 
     <section class="picking-section">
-      <h2 class="picking-section__header">Фильтры</h2>
+      <h2 class="picking-section__header visually-hidden">Фильтры</h2>
 
       <form class="picking-section__form">
         <fieldset class="picking-section__fieldset">
-          <legend class="picking-section__legend">Сортировка</legend>
+          <legend class="picking-section__legend visually-hidden">Фильтры</legend>
             
           <ul class="picking-section__list">
-            <li class="picking-section__item">по популярности
-              <ul class="picking-section__item-list">
-                <li>по популярности</li>
-                <li>сначала недорогие</li>
-                <li>сначала дорогие</li>
-                <li>по жирности</li>
-              </ul>
+            <li class="picking-section__item">Сортировка: 
+              <select class="picking-section__select">
+                <option class="picking-section__option">по популярности</option>
+                <option class="picking-section__option">сначала недорогие</option>
+                <option class="picking-section__option">сначала дорогие</option>
+                <option class="picking-section__option">по жирности</option>
+              </select>
             </li>  
 
             <li class="picking-section__item">
-              <label for="price">Цена: </label>100 руб. - 500 руб.
+              <label class="picking-section__label" for="price">Цена: </label>100 руб. - 500 руб.
               <input type="range" id="price" min="0" max="1000" value="200">
             </li>
         
             <li class="picking-section__item">
               <p class="picking-section__text">Жирность:</p>
-              <label for="0%">0%</label><input type="radio" name="fat-content" id="0%" value="0%">
-              <label for="to_10%">до 10%</label><input type="radio" name="fat-content" id="to_10%" value="to_10%">
-              <label for="to_30%">до 30%</label><input type="radio" name="fat-content" id="to_30%" value="to_30%" checked>
-              <label for="from_30%">выше 30%</label><input type="radio" name="fat-content" id="from_30%" value="from_30%">  
+              <label class="picking-section__label" for="0%">0%</label><input type="radio" name="fat-content" id="0%" value="0%">
+              <label class="picking-section__label" for="to_10%">до 10%</label><input type="radio" name="fat-content" id="to_10%" value="to_10%">
+              <label class="picking-section__label" for="to_30%">до 30%</label><input type="radio" name="fat-content" id="to_30%" value="to_30%" checked>
+              <label class="picking-section__label" for="from_30%">выше 30%</label><input type="radio" name="fat-content" id="from_30%" value="from_30%">  
             </li>
 
             <li class="picking-section__item">
               <p class="picking-section__text">Наполнители:</p>
-              <label for="chocolate">шоколадные</label><input type="checkbox" id="chocolate" checked>
-              <label for="sugar">сахарные присыпки</label><input type="checkbox" id="sugar" checked>
-              <label for="fruit">фрукты</label><input type="checkbox" id="fruit">
-              <label for="syrup">сиропы</label><input type="checkbox" id="syrup">
-              <label for="jam">джемы</label><input type="checkbox" id="jam">
+              <label class="picking-section__label" for="chocolate">шоколадные</label><input type="checkbox" id="chocolate" value="chocolate" checked>
+              <label class="picking-section__label" for="sugar">сахарные присыпки</label><input type="checkbox" id="sugar" value="sugar" checked>
+              <label class="picking-section__label" for="fruit">фрукты</label><input type="checkbox" id="fruit" value="fruit">
+              <label class="picking-section__label" for="syrup">сиропы</label><input type="checkbox" id="syrup" value="syrup">
+              <label class="picking-section__label" for="jam">джемы</label><input type="checkbox" id="jam" value="jam">
             </li>
           </ul>
 
-          <button type="button">Применить</button>
+          <button type="submit">Применить</button>
         </fieldset>
       </form>    
     </section>
@@ -180,85 +189,85 @@
         <li class="features__item">
           <img class="features__image" src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p class="features__price">310&#8381;<span>/кг</span></p>
-          <a class="features__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a class="features__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           <a class="features__link button" href="#">Быстрый просмотр</a>
         </li>
     
         <li class="features__item">
           <img class="features__image" src="img/coffee.jpg" alt="Сливочно-кофейное с кусочками шоколада">
           <p class="features__price">380&#8381;<span>/кг</span></p>
-          <a class="features__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+          <a class="features__title" href="#">Сливочно-кофейное с кусочками шоколада</a>
           <a class="features__link button" href="#">Быстрый просмотр</a>
         </li>
 
         <li class="features__item">
           <img class="features__image" src="img/strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <p class="features__price">355&#8381;<span>/кг</span></p>
-          <a class="features__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class="features__title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           <a class="features__link button" href="#">Быстрый просмотр</a>
         </li>
 
         <li class="features__item">
           <img class="features__image" src="img/caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
           <p class="features__price">415&#8381;<span>/кг</span></p>
-          <a class="features__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          <a class="features__title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           <a class="features__link button" href="#">Быстрый просмотр</a>
         </li>
         
         <li class="features__item">
           <img class="features__image" src="img/cowberry.jpg" alt="Сливочное с брусничным джемом">
           <p class="features__price">325&#8381;<span>/кг</span></p>
-          <a class="features__link" href="#">Сливочное с брусничным джемом</a>
+          <a class="features__title" href="#">Сливочное с брусничным джемом</a>
           <a class="features__link button" href="#">Быстрый просмотр</a>
         </li>
     
         <li class="features__item">
           <img class="features__image" src="img/blueberry.jpg" alt="Сливочно-черничное с цельными ягодами черники">
           <p class="features__price">410&#8381;<span>/кг</span></p>
-          <a class="features__link" href="#">Сливочно-черничное с цельными ягодами черники </a>
+          <a class="features__title" href="#">Сливочно-черничное с цельными ягодами черники </a>
           <a class="features__link button" href="#">Быстрый просмотр</a>
         </li>
        
         <li class="features__item">
           <img class="features__image" src="img/lemon.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
           <p class="features__price">375&#8381;<span>/кг</span></p>
-          <a class="features__link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+          <a class="features__title" href="#">Сливочно-лимонное с карамельной присыпкой</a>
           <a class="features__link button" href="#">Быстрый просмотр</a>
         </li>
 
         <li class="features__item">
           <img class="features__image" src="img/chocolate-shavings.jpg" alt="Сливочное с шоколадной стружкой">
           <p class="features__price">320&#8381;<span>/кг</span></p>
-          <a class="features__link" href="#">Сливочное с шоколадной стружкой</a>
+          <a class="features__title" href="#">Сливочное с шоколадной стружкой</a>
           <a class="features__link button" href="#">Быстрый просмотр</a>
         </li>
      
         <li class="features__item">
           <img class="features__image" src="img/vanil-and-chocolate-chips.jpg" alt="Сливочно-ванильное с кусочками шоколада">
           <p class="features__price">440&#8381;<span>/кг</span></p>
-          <a class="features__link" href="#">Сливочно-ванильное с кусочками шоколада</a>
-          <a class="features__link" href="#">Быстрый просмотр</a>
+          <a class="features__title" href="#">Сливочно-ванильное с кусочками шоколада</a>
+          <a class="features__link button" href="#">Быстрый просмотр</a>
         </li>
      
         <li class="features__item">
           <img class="features__image" src="img/menthol.jpg" alt="Сливочноe с ментоловым сиропом">
           <p class="features__price">435&#8381;<span>/кг</span></p>
-          <a class="features__link" href="#">Сливочноe с ментоловым сиропом</a>
-          <a class="features__link" href="#">Быстрый просмотр</a>
+          <a class="features__title" href="#">Сливочноe с ментоловым сиропом</a>
+          <a class="features__link button" href="#">Быстрый просмотр</a>
         </li>
      
         <li class="features__item">
           <img class="features__image" src="img/dark-chocolate.jpg" alt="Сливочное с кусочками черного шоколада">
           <p class="features__price">355&#8381;<span>/кг</span></p>
-          <a class="features__link" href="#">Сливочное с кусочками черного шоколада</a>
-          <a class="features__link" href="#">Быстрый просмотр</a>
+          <a class="features__title" href="#">Сливочное с кусочками черного шоколада</a>
+          <a class="features__link button" href="#">Быстрый просмотр</a>
         </li>
      
         <li class="features__item">
           <img class="features__image" src="img/mint.jpg" alt="Сливочное с мятным сиропом">
           <p class="features__price">310&#8381;<span>/кг</span></p>
-          <a class="features__link" href="#">Сливочное с мятным сиропом</a>
-          <a class="features__link" href="#">Быстрый просмотр</a>
+          <a class="features__title" href="#">Сливочное с мятным сиропом</a>
+          <a class="features__link button" href="#">Быстрый просмотр</a>
         </li>
       </ul>
     </section>
@@ -269,7 +278,7 @@
 
       <ul class="pagination__list">
         <li class="pagination__item">
-          <a class="pagination__link">1</a>
+          <a class="pagination__link --active">1</a>
         </li>
         <li class="pagination__item">
           <a class="pagination__link" href="#">2</a>
@@ -304,8 +313,13 @@
     </ul>
     
     <div class="web-studio-info">
-      <img class="web-studio-info__logo" width="108" height="39" src="img/logo-htmlacademy.svg" alt="Логотип Html Academy">
-      <p class="web-studio-info__text">Сделано в <a class="web-studio-info__link" href="#">HTML Academy</a>© 2017</p>
+
+      <a class="web-studio-info__logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="web-studio-info__logo-image" width="108" height="39" src="img/logo-htmlacademy.svg" alt="Логотип Html Academy">
+      </a>
+
+      <p class="web-studio-info__text">Сделано в <a class="web-studio-info__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>© 2017</p>
+
     </div>
 
   </footer>
