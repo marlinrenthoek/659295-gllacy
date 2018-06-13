@@ -19,15 +19,25 @@
           <a class="site-navigation__link" href="#">Каталог</a>
           <ul class="site-navigation__dropdown-list">
             <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link fontBold" href="#">Новинки</a></li>
+              <a class="site-navigation__dropdown-link fontBold" href="#">Новинки</a>
+            </li>
+
             <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link" href="catalog.html">Сливочное</a></li>
+              <a class="site-navigation__dropdown-link" href="catalog.html">Сливочное</a>
+            </li>
+
             <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link" href="#">Щербет</a></li>
+              <a class="site-navigation__dropdown-link" href="#">Щербет</a>
+            </li>
+
             <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link" href="#">Фруктовый лед</a></li>
+              <a class="site-navigation__dropdown-link" href="#">Фруктовый лед</a>
+            </li>
+
             <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link" href="#">Мелорин</a></li>
+              <a class="site-navigation__dropdown-link" href="#">Мелорин</a>
+            </li>
+          
           </ul>
         </li>
         <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка и оплата</a></li>
@@ -65,37 +75,41 @@
 
         <a class="basket__link button">Корзина</a>
 
-        <table class="basket__table">
-          <tr class="basket__row">
-            <td class="basket__del-button"><button class="basket__button" type="button">Удалить из корзины</button></td>
-            <td class="basket__img"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-            <td class="basket__item">Пломбир с апельсиновым джемом</td>
-            <td class="basket__amount">1,5 кг x </td>
-            <td class="basket__price">200 руб.</td>
-            <td class="basket__total-cost">300 руб.</td>
-          </tr>
-    
-          <tr class="basket__row">
-            <td class="basket__del-button"><button type="button" class="basket__button">Удалить из корзины</button></td>
-            <td class="basket__img"><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-            <td class="basket__item">Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td class="basket__amount">1,5 кг x </td>
-            <td class="basket__price">300 руб.</td>
-            <td class="basket__total-cost">450 руб.</td>
-          </tr>
-    
-          <tr class="basket__row">
-            <td class="basket__del-button"></td>
-            <td class="basket__img"></td>
-            <td class="basket__item"></td>
-            <td class="basket__amount"></td>
-            <td class="basket__price"></td>
-            <td class="basket__total-cost">Итого: 750руб.</td>
-          </tr>
-        </table>
+        <div class="basket-container">
 
-        <a class="basket__link button" href="#">Оформить заказ</a>
-        
+          <table class="basket__table">
+            <tr class="basket__row">
+              <td class="basket__del-button"><button class="basket__button" type="button">Удалить из корзины</button></td>
+              <td class="basket__img"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+              <td class="basket__item">Пломбир с апельсиновым джемом</td>
+              <td class="basket__amount">1,5 кг x </td>
+              <td class="basket__price">200 руб.</td>
+              <td class="basket__total-cost">300 руб.</td>
+            </tr>
+    
+            <tr class="basket__row">
+              <td class="basket__del-button"><button type="button" class="basket__button">Удалить из корзины</button></td>
+              <td class="basket__img"><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+              <td class="basket__item">Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td class="basket__amount">1,5 кг x </td>
+              <td class="basket__price">300 руб.</td>
+              <td class="basket__total-cost">450 руб.</td>
+            </tr>
+    
+            <tr class="basket__row">
+              <td class="basket__del-button"></td>
+              <td class="basket__img"></td>
+              <td class="basket__item"></td>
+              <td class="basket__amount"></td>
+              <td class="basket__price"></td>
+              <td class="basket__total-cost">Итого: 750руб.</td>
+            </tr>
+          </table>
+
+          <a class="basket__link button" href="#">Оформить заказ</a>
+    
+        </div>  
+          
       </section>
     
       <p class="schedule-and-contacts">C 10 до 2, ежедневно <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a></p>
@@ -227,7 +241,7 @@
       <img class="contact-info__img" width="1250" height="430" alt="Наш адрес на карте" src="img/map.jpg">
       <p class="сontact-info__text">Адрес главного офиса и офлайн-магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
       <p class="сontact-info__text">Для заказов по телефону: <a class="contact-info__link" href="tel:+78124502525">8 812 450-25-25 </a>(c 10 до 20 ежедневно)</p>
-      <a class="сontact-info__button button" href="#">Форма обратной связи</a>
+      <a class="сontact-info__link button" href="#">Форма обратной связи</a>
     </section>
 
   </main>

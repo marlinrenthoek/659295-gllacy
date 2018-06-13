@@ -16,10 +16,11 @@
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy shop»"></a>
       <ul class="site-navigation">
-        <li class="site-navigation__item"><a class="site-navigation__link" href="catalog.html">Каталог</a>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="catalog.html">Каталог</a>
           <ul class="site-navigation__dropdown-list">
             <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-item-link dropdown__header-link" href="#">Новинки</a>
+              <a class="site-navigation__dropdown-item-link fontBold" href="#">Новинки</a>
             </li>
 
             <li class="site-navigation__dropdown-item --active">
@@ -73,40 +74,44 @@
       <section class="basket">
 
         <a class="basket__link button" href="#">Корзина</a>
-          
-        <table class="basket__table">
-
-          <tr class="basket__row">
-            <td class="basket__del-button"><button class="basket__button" type="button">Удалить из корзины</button></td>
-            <td class="basket__img"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-            <td class="basket__item">Пломбир с апельсиновым джемом</td>
-            <td class="basket__amount">1,5 кг x </td>
-            <td class="basket__price">200 руб.</td>
-            <td class="basket__total-cost">300 руб.</td>
-          </tr>
-
-          <tr class="basket__row">
-            <td class="basket__del-button"><button type="button" class="basket__button">Удалить из корзины</button></td>
-            <td class="basket__img"><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-            <td class="basket__item">Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td class="basket__amount">1,5 кг x </td>
-            <td class="basket__price">300 руб.</td>
-            <td class="basket__total-cost">450 руб.</td>
-          </tr>
-
-          <tr class="basket__row">
-            <td class="basket__del-button"></td>
-            <td class="basket__img"></td>
-            <td class="basket__item"></td>
-            <td class="basket__amount"></td>
-            <td class="basket__price"></td>
-            <td class="basket__total-cost">Итого: 750руб.</td>
-          </tr>
+        
+        <div class="basket-container">
   
-        </table>
+          <table class="basket__table">
+
+            <tr class="basket__row">
+              <td class="basket__del-button"><button class="basket__button" type="button">Удалить из корзины</button></td>
+              <td class="basket__img"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+              <td class="basket__item">Пломбир с апельсиновым джемом</td>
+              <td class="basket__amount">1,5 кг x </td>
+              <td class="basket__price">200 руб.</td>
+              <td class="basket__total-cost">300 руб.</td>
+            </tr>
+
+            <tr class="basket__row">
+              <td class="basket__del-button"><button type="button" class="basket__button">Удалить из корзины</button></td>
+              <td class="basket__img"><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+              <td class="basket__item">Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td class="basket__amount">1,5 кг x </td>
+              <td class="basket__price">300 руб.</td>
+              <td class="basket__total-cost">450 руб.</td>
+            </tr>
+
+            <tr class="basket__row">
+              <td class="basket__del-button"></td>
+              <td class="basket__img"></td>
+              <td class="basket__item"></td>
+              <td class="basket__amount"></td>
+              <td class="basket__price"></td>
+              <td class="basket__total-cost">Итого: 750руб.</td>
+            </tr>
   
-        <a class="basket__link" href="#">Оформить заказ</a>
-      
+          </table>
+        
+          <a class="basket__link" href="#">Оформить заказ</a>
+        
+        </div>
+
       </section>
 
       <p class="schedule-and-contacts">C 10 до 2, ежедневно <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a></p>
