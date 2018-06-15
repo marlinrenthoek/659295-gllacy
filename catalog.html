@@ -20,23 +20,23 @@
           <a class="site-navigation__link" href="catalog.html">Каталог</a>
           <ul class="site-navigation__dropdown-list">
             <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-item-link fontBold" href="#">Новинки</a>
+              <a class="site-navigation__dropdown-link fontBold" href="#">Новинки</a>
             </li>
 
             <li class="site-navigation__dropdown-item --active">
-              <a class="site-navigation__dropdown-item-link">Сливочное</a>
+              <a class="site-navigation__dropdown-link">Сливочное</a>
             </li>
 
             <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-item-link" href="#">Щербет</a>
+              <a class="site-navigation__dropdown-link" href="#">Щербет</a>
             </li>
 
             <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-item-link" href="#">Фруктовый лед</a>
+              <a class="site-navigation__dropdown-link" href="#">Фруктовый лед</a>
             </li>
 
             <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-item-link" href="#">Мелорин</a>
+              <a class="site-navigation__dropdown-link" href="#">Мелорин</a>
             </li>
 
           </ul>
@@ -63,7 +63,7 @@
         <label for="interactive-menu__password">Пароль</label>
         <input type="password" id="interactive-menu__password">
       
-        <button type="submit" class="interactive-menu__send-form-btn">Войти</button>
+        <button type="submit" class="interactive-menu__send-form-btn button">Войти</button>
 
       </form>
 
@@ -143,49 +143,72 @@
 
     <h1 class="container__header">Сливочное мороженое</h1>
 
-    <section class="picking-section">
-      <h2 class="picking-section__header visually-hidden">Фильтры</h2>
+	<section class="picking-section">
+    
+	  <h2 class="picking-section__header visually-hidden">Фильтры</h2>
 
       <form class="picking-section__form">
         <fieldset class="picking-section__fieldset">
-          <legend class="picking-section__legend visually-hidden">Фильтры</legend>
-            
-          <ul class="picking-section__list">
-            <li class="picking-section__item">Сортировка: 
-              <select class="picking-section__select">
-                <option class="picking-section__option">по популярности</option>
-                <option class="picking-section__option">сначала недорогие</option>
-                <option class="picking-section__option">сначала дорогие</option>
-                <option class="picking-section__option">по жирности</option>
-              </select>
-            </li>  
+          <legend class="picking-section__header">Сортировка</legend>
+          <select class="picking-section__select">
+            <option class="picking-section__option" selected>по популярности</option>
+            <option class="picking-section__option">сначала недорогие</option>
+            <option class="picking-section__option">сначала дорогие</option>
+            <option class="picking-section__option">по жирности</option>
+          </select>
+		</fieldset>
+          
 
-            <li class="picking-section__item">
-              <label class="picking-section__label" for="price">Цена: </label>100 руб. - 500 руб.
-              <input type="range" id="price" min="0" max="1000" value="200">
-            </li>
-        
-            <li class="picking-section__item">
-              <p class="picking-section__text">Жирность:</p>
-              <label class="picking-section__label" for="0%">0%</label><input type="radio" name="fat-content" id="0%" value="0%">
-              <label class="picking-section__label" for="to_10%">до 10%</label><input type="radio" name="fat-content" id="to_10%" value="to_10%">
-              <label class="picking-section__label" for="to_30%">до 30%</label><input type="radio" name="fat-content" id="to_30%" value="to_30%" checked>
-              <label class="picking-section__label" for="from_30%">выше 30%</label><input type="radio" name="fat-content" id="from_30%" value="from_30%">  
-            </li>
-
-            <li class="picking-section__item">
-              <p class="picking-section__text">Наполнители:</p>
+        <fieldset class="picking-section__fieldset">
+		  <legend class="picking-section__header">Цена: 100 руб. - 500 руб.</legend>
+		  <input type="range" id="price" min="0" max="1000" step="50" value="200">
+        </fieldset>
+		
+		<fieldset class="picking-section__fieldset">
+		  <legend class="picking-section__header">Жирность:</legend>
+			<ul class="picking-section__list-radio">
+			  <li class="picking-section__item">
+				<label class="picking-section__label" for="0%">0%</label>
+				<input type="radio" name="fat-content" id="0%" value="0%">
+			  </li>
+			  <li class="picking-section__item">
+				<label class="picking-section__label" for="to_10%">до 10%</label>
+				<input type="radio" name="fat-content" id="to_10%" value="to_10%" checked>
+			  </li>
+			  <li class="picking-section__item">
+				 <label class="picking-section__label" for="to_30%">до 30%</label>
+				  <input type="radio" name="fat-content" id="to_30%" value="to_30%">
+				</li>
+				<li class="picking-section__item">
+				  <label class="picking-section__label" for="from_30%">выше 30%</label>
+				  <input type="radio" name="fat-content" id="from_30%" value="from_30%">
+				</li>
+            </ul>
+		</fieldset>
+		
+		<fieldset  class="picking-section__fieldset">
+		  <legend class="picking-section__header">Наполнители:</legend>
+		  <ul class="picking-section__list-checkbox">
+			<li class="picking-section__item">
               <label class="picking-section__label" for="chocolate">шоколадные</label><input type="checkbox" id="chocolate" value="chocolate" checked>
+			</li>
+			<li class="picking-section__item">
               <label class="picking-section__label" for="sugar">сахарные присыпки</label><input type="checkbox" id="sugar" value="sugar" checked>
+			</li>
+			<li class="picking-section__item">
               <label class="picking-section__label" for="fruit">фрукты</label><input type="checkbox" id="fruit" value="fruit">
+			</li>
+			<li class="picking-section__item">
               <label class="picking-section__label" for="syrup">сиропы</label><input type="checkbox" id="syrup" value="syrup">
+			</li>
               <label class="picking-section__label" for="jam">джемы</label><input type="checkbox" id="jam" value="jam">
             </li>
-          </ul>
-
-          <button type="submit">Применить</button>
-        </fieldset>
-      </form>    
+		  </ul>
+		</fieldset>
+		
+        <button class="picking-section__button button" type="submit">Применить</button>
+      
+	  </form>    
     </section>
     
     <section class="features">
