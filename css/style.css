@@ -172,6 +172,7 @@ a:active {
   margin-right: 0;
 }
 .interactive-menu__link {
+  
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -180,8 +181,11 @@ a:active {
   padding: 7px 15px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-
 }
+.interactive-menu__link:nth-child(1) {
+  
+}
+
 
 .interactive-menu__link:hover {
   color: #323232;
@@ -276,7 +280,21 @@ a:active {
 
 .breadcrumbs__list {
 	list-style: none;
-	padding: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  padding-left: 27px;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  padding-right: 20px;
+
+}
+.breadcrumbs__link.--active {
+  text-decoration: none;
 }
 
 .picking-section {
@@ -402,19 +420,22 @@ a:active {
 }
 
 .special-offers {
-  margin-bottom: 0px;
-  padding-bottom: 25px;
+  margin: 0 auto;
+  padding: 0 27px;
+  margin-bottom: 40px;
 }
-
 
 .special-offers__list {
   list-style: none;
-
- 
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 .special-offers__item {
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   padding-top: 18px;
   padding-bottom: 25px;
@@ -433,27 +454,26 @@ a:active {
   background-color: #45291b;
   background-image: url(../img/chocolate-background.jpg);
   background-repeat: no-repeat;
+  margin-right: 0;
 }
 
 .special-offers__header {
   font-size: 35px;
   line-height: 41px;
   margin: 0;
-  margin-bottom: 10px;
-  
 }
 
 .special-offers__text {
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
-  margin-bottom: 30px;
-  width: 513px;
-  
+  max-width: 513px;
+  min-width: 390px;
 }
-
 .special-offers__link {
-   
+  margin-right: 0px;
+  margin-left: auto;
+  margin-bottom: 10px;
 }
 
 .features {
@@ -505,40 +525,51 @@ a:active {
   width: 266px;  
 }
 
+.pagination {
+  margin: 0 auto;
+  padding-right: 27px;
+}
+
 .pagination__list {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .pagination__link {
   font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 13px;
 }
 .pagination__link:hover {
   background-color: rgba(248, 247, 244, 0.2);
   color: #fff;
+  text-decoration: none;
 }
-.pagination__link:active {
+.pagination__link:active,
+.pagination__link.--active {
   background-color: #fff;
   color: black;
+  text-decoration: none;
 }	
 
-.shop-info-container {
+.shop-info {
   margin: 0 auto;
-  padding-top: 27px;
+  margin-bottom: 40px;
   padding: 0 27px;
 }
-
-.shop-info {
+.shop-info__list {
   background-color: #ede0c3;
   background-image: url(../img/wafer-pattern.jpg);
-  margin: 0 auto;
-  padding: 25px 20px;
-  margin-bottom: 40px;
-}
-.shop-info__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  padding: 25px 20px;
   margin: 0;
+  border-radius: 10px;
 }
 
 .shop-info__text.title {
@@ -760,29 +791,6 @@ a:active {
 .slider-navigation {
 	display: flex;
 }
-	
-.special-offers__list {
-	display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0 27px;
-  
-  
-
-}
-
-.special-offers__item{
-  display: flex;
-  flex-direction: column;
-
-  
-
-
-}
-
-.special-offers__link {
-  align-self: flex-end;
-}
 
 .features__list {
 	display: flex;
@@ -807,17 +815,15 @@ a:active {
   margin-right: 0;
 }
 
-.shop-info__list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+
 
 .flex-container {
 	display: flex;
   flex-direction: row;
-  
+  margin: 0 auto;
+  padding: 0 27px;
 }
+
 .main-footer {
 	display: flex;
 	flex-direction: row;
