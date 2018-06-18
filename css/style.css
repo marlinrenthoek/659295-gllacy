@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  width: 1200px;
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -73,7 +72,6 @@ a:active {
   list-style: none;
   padding: 0;
   width: 650px;
-  margin-left: 27px;
   margin-top: 10px;
 }
 
@@ -160,6 +158,7 @@ a:active {
 }
 .interactive-menu__item {
   margin-right: 10px;
+  margin-bottom: 26px;
 }
 .interactive-menu__item:last-child {
   margin-right: 0;
@@ -172,7 +171,7 @@ a:active {
   padding: 10px 15px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-
+  margin-bottom: 160px;
 }
 .interactive-menu__link:hover {
   color: #323232;
@@ -249,10 +248,6 @@ a:active {
   font-weight: bold;
   text-align: right;
   width: 175px;
-  padding-right: 10px;
-  margin-bottom: 280px; 
-  
-  
 }
 
 .phone-number {
@@ -262,6 +257,10 @@ a:active {
   text-align: right;
   white-space: nowrap;
   text-decoration: none;
+}
+.phone-number:hover,
+.phone-number:active {
+  color: #fff;
 }
 
 .breadcrumbs__list {
@@ -342,8 +341,11 @@ a:active {
 
 .slider__item {
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top, center;
+  
   margin: 0 auto;
+  margin-top: -158px;
+  padding-bottom: 500px;
 }
 
 .slider__item:nth-child(1) {
@@ -368,6 +370,7 @@ a:active {
   width: 670px;
   margin: 0 auto;
   margin-bottom: 35px;
+  padding-top: 395px;
 }
 
 .slider__link {
@@ -396,7 +399,7 @@ a:active {
 .special-offers__list {
   padding: 0;
   list-style: none;
-  margin-left: 27px;
+
   width: 500px;
   
 }
@@ -407,9 +410,8 @@ a:active {
   padding-bottom: 25px;
   border-radius: 15px;
   margin: 0;
-  
-
-
+  margin-top: -510px;
+ 
 }
 .special-offers__item:nth-child(1) {
   background-color: #611323;
@@ -446,7 +448,6 @@ a:active {
 }
 
 .features {
-  padding: 0 27px;
   margin-bottom: 40px;
 }
 
@@ -457,7 +458,11 @@ a:active {
 }
 
 .features__item {
+  margin-right: 24px;
+}
 
+.features__item:last-child {
+  margin-right: 0;
 }
 .features__item:hover {
   border-radius: 5px;
@@ -484,7 +489,8 @@ a:active {
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
-  text-align: center;  
+  text-align: center;
+  width: 266px;  
 }
 
 .pagination__list {
@@ -510,7 +516,6 @@ a:active {
   background-repeat: no-repeat; 
   padding: 25px 20px;
   margin-bottom: 40px;
-  margin-left: 27px;
 }
 
 .shop-info__title {
@@ -539,7 +544,6 @@ a:active {
   padding-right: 250px; 
   margin-bottom: 40px;
   border-radius: 10px;
-  margin-left: 27px;
 }
 
 .blog__text {
@@ -668,6 +672,11 @@ a:active {
 }
 
 /*сетки крупные*/
+.page-center-container {
+  margin: 0 auto;
+  padding: 0 27px;
+  width: 1200px;
+}
 
 .header-container {
 	display: flex;
