@@ -35,10 +35,10 @@ a:active {
   text-shadow: 
     0 -2px 5px rgba(61, 61, 46, 0.34),
     0 2px 5px rgba(160, 32, 11, 0.76); 
-    padding: 10px 25px;
-    text-decoration: none;
-    outline: none;
-    border: none;
+  padding: 10px 25px;
+  text-decoration: none;
+  outline: none;
+  border: none;
   
 }
 
@@ -667,5 +667,129 @@ a:active {
   text-decoration-color: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/*сетки крупные*/
 
+.header-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.site-navigation {
+	display: flex;
+	flex-direction: row;
+}
+
+.interactive-menu__list {
+	display: flex;
+	flex-direction: row;
+  justify-content: flex-end;
+  
+}
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+
+
+.picking-section__form {
+	display: flex;
+}
+
+.picking-section__list-radio {
+	display: flex;
+	flex-direction: row;
+}
+
+.picking-section__list-checkbox {
+	display: flex;
+	flex-direction: row;
+}
+
+.slider__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+
+.slider-navigation {
+	display: flex;
+}
+	
+.special-offers__list {
+	display: flex;
+  flex-direction: row;
+
+}
+
+.special-offers__item{
+  display: flex;
+  flex-direction: column;
+  
+
+
+}
+
+.special-offers__link {
+  align-self: flex-end;
+}
+
+.features__list {
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.features__link {
+  padding-left: auto;
+  padding-right: 23px;
+  
+}
+
+.features__item {
+	display: flex;
+  flex-direction: column;
+  margin-right: 27px;
+}
+.features__item:nth-last-child {
+  margin-right: 0;
+}
+
+.flex-container {
+	display: flex;
+  flex-direction: row;
+  
+}
+.main-footer {
+	display: flex;
+	flex-direction: row;
+}
+
+.social-media {
+	display: flex;
+	flex-direction: row;
+}
+
+.additional-information {
+	display: flex;
+	flex-direction: row;
+}
+
+/*временно скрыла выпадашки*/
+.site-navigation__dropdown-list,
+.interactive-menu__search-form,
+.interactive-menu__login-form,
+.basket,
+.slider__item:nth-child(2),
+.slider__item:nth-child(3),
+.slider-navigation,
+.features__link,
+.сontact-info__container,
+.feedback-form {
+  display: none;
+}
 
