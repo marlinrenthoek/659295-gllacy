@@ -13,110 +13,118 @@
 <body>
 
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy shop»"></a>
-      <ul class="site-navigation">
-        <li class="site-navigation__item">
-          <a class="site-navigation__link" href="catalog.html">Каталог</a>
-          <ul class="site-navigation__dropdown-list">
-            <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link fontBold" href="#">Новинки</a>
-            </li>
+    <div class="header-container">
+	  <nav class="main-navigation">
+        <ul class="site-navigation">
+		  <li class="site-navigation__item">
+	        <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy shop»"></a>
+		  </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link --active" href="catalog.html">Каталог</a>
+            <ul class="site-navigation__dropdown-list">
+              <li class="site-navigation__dropdown-item">
+                <a class="site-navigation__dropdown-link fontBold" href="#">Новинки</a>
+              </li>
 
-            <li class="site-navigation__dropdown-item --active">
-              <a class="site-navigation__dropdown-link">Сливочное</a>
-            </li>
+              <li class="site-navigation__dropdown-item --active">
+                <a class="site-navigation__dropdown-link">Сливочное</a>
+              </li>
 
-            <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link" href="#">Щербет</a>
-            </li>
+              <li class="site-navigation__dropdown-item">
+                <a class="site-navigation__dropdown-link" href="#">Щербет</a>
+              </li>
 
-            <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link" href="#">Фруктовый лед</a>
-            </li>
+              <li class="site-navigation__dropdown-item">
+                <a class="site-navigation__dropdown-link" href="#">Фруктовый лед</a>
+              </li>
 
-            <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link" href="#">Мелорин</a>
-            </li>
-
-          </ul>
-        </li>
-        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка и оплата</a></li>
-        <li class="site-navigation__item"><a class="site-navigation__link" href="#">О компании</a></li>
-      </ul>
-    </nav>    
-
-    <div class="interactive-menu">
-       
-      <a class="interactive-menu__link button" href="#">Поиск по каталогу</a>
-
-      <label class="interactive-menu__label" for="search">Что ищем</label>
+              <li class="site-navigation__dropdown-item">
+                <a class="site-navigation__dropdown-link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-navigation__item">
+		    <a class="site-navigation__link" href="#">Доставка и оплата</a>
+		  </li>
+          <li class="site-navigation__item">
+		  <a class="site-navigation__link" href="#">О компании</a>
+		</li>
+        </ul>
+      </nav> 
+	
+      <div class="flex-wrapper">
+		<section class="interactive-menu">
+		  <ul class="interactive-menu__list">
+	        <li class="interactive-menu__item">
+	          <a class="interactive-menu__link" href="#">Поиск по каталогу</a>
+	        </li>
+		    <li class="interactive-menu__item">
+		      <a class="interactive-menu__link" href="#">Вход</a>
+	        </li>
+		    <li class="interactive-menu__item">
+		      <a class="interactive-menu__link">Корзина</a>
+	        </li>
+	      </ul>
+	    </section>
+        <p class="schedule-and-contacts">C 10 до 2, ежедневно <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a></p>
+	  </div>
+    
+	</div>
+	
+	
+	<form class="interactive-menu__search-form">
+	  <label class="interactive-menu__label" for="search">Что ищем</label>
       <input class="interactive-menu__search-field" type="text" id="search">
+    </form>
+	  
+    <form class="interactive-menu__login-form">
+      <label class="interactive-menu__label" for="interactive-menu__mail">Электронная почта</label>
+      <input class="interactive-menu__field" type="text" id="interactive-menu__mail">
       
-      <a class="interactive-menu__link button" href="#">Вход</a>
-
-      <form class="interactive-menu__login-form">
-
-        <label for="interactive-menu__mail">Электронная почта</label>
-        <input type="text" id="interactive-menu__mail">
+      <label for="interactive-menu__password">Пароль</label>
+      <input type="password" id="interactive-menu__password">
       
-        <label for="interactive-menu__password">Пароль</label>
-        <input type="password" id="interactive-menu__password">
+      <button type="submit" class="interactive-menu__login-form-btn button">Войти</button>
+
+    </form>
+
+<!-- !!!! -->      <a class="interactive-menu__forgot-password-link" href="#">Забыли пароль?</a>
+
+<!-- !!!! -->       <a class="interactive-menu__registration-link" href="#">Новая регистрация</a>
+
+    <form class="basket">
+      <table class="basket__table">
+        <tr class="basket__row">
+          <td class="basket__del-button"><button class="basket__button" type="button">Удалить из корзины</button></td>
+          <td class="basket__img"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+          <td class="basket__item">Пломбир с апельсиновым джемом</td>
+          <td class="basket__amount">1,5 кг x </td>
+          <td class="basket__price">200 руб.</td>
+          <td class="basket__total-cost">300 руб.</td>
+        </tr>
+
+        <tr class="basket__row">
+          <td class="basket__del-button"><button type="button" class="basket__button">Удалить из корзины</button></td>
+          <td class="basket__img"><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+          <td class="basket__item">Клубничный пломбир с присыпкой из белого шоколада</td>
+          <td class="basket__amount">1,5 кг x </td>
+          <td class="basket__price">300 руб.</td>
+          <td class="basket__total-cost">450 руб.</td>
+        </tr>
+
+        <tr class="basket__row">
+          <td class="basket__del-button"></td>
+          <td class="basket__img"></td>
+          <td class="basket__item"></td>
+          <td class="basket__amount"></td>
+          <td class="basket__price"></td>
+          <td class="basket__total-cost">Итого: 750руб.</td>
+        </tr>
+      </table>
+      <button type="submit" class="basket__sent-form-button button">Оформить заказ</button>
+    </form>
+
       
-        <button type="submit" class="interactive-menu__send-form-btn button">Войти</button>
-
-      </form>
-
-      <a class="interactive-menu__forgot-password-link" href="#">Забыли пароль?</a>
-
-      <a class="interactive-menu__registration-link" href="#">Новая регистрация</a>
-
-      <section class="basket">
-
-        <a class="basket__link button" href="#">Корзина</a>
-        
-        <div class="basket-container">
-  
-          <table class="basket__table">
-
-            <tr class="basket__row">
-              <td class="basket__del-button"><button class="basket__button" type="button">Удалить из корзины</button></td>
-              <td class="basket__img"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-              <td class="basket__item">Пломбир с апельсиновым джемом</td>
-              <td class="basket__amount">1,5 кг x </td>
-              <td class="basket__price">200 руб.</td>
-              <td class="basket__total-cost">300 руб.</td>
-            </tr>
-
-            <tr class="basket__row">
-              <td class="basket__del-button"><button type="button" class="basket__button">Удалить из корзины</button></td>
-              <td class="basket__img"><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-              <td class="basket__item">Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td class="basket__amount">1,5 кг x </td>
-              <td class="basket__price">300 руб.</td>
-              <td class="basket__total-cost">450 руб.</td>
-            </tr>
-
-            <tr class="basket__row">
-              <td class="basket__del-button"></td>
-              <td class="basket__img"></td>
-              <td class="basket__item"></td>
-              <td class="basket__amount"></td>
-              <td class="basket__price"></td>
-              <td class="basket__total-cost">Итого: 750руб.</td>
-            </tr>
-  
-          </table>
-        
-          <a class="basket__link" href="#">Оформить заказ</a>
-        
-        </div>
-
-      </section>
-
-      <p class="schedule-and-contacts">C 10 до 2, ежедневно <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a></p>
-  
-    </div>
 
   </header>
 
@@ -145,7 +153,7 @@
 
 	<section class="picking-section">
     
-	  <h2 class="picking-section__header visually-hidden">Фильтры</h2>
+	  <h2 class="visually-hidden">Фильтры</h2>
 
       <form class="picking-section__form">
         <fieldset class="picking-section__fieldset">
@@ -160,8 +168,11 @@
           
 
         <fieldset class="picking-section__fieldset">
-		  <legend class="picking-section__header">Цена: 100 руб. - 500 руб.</legend>
-		  <input type="range" id="price" min="0" max="1000" step="50" value="200">
+		  <legend class="picking-section__header">Цена: </legend>
+		  <output class="picking-section__output-from">100 руб. - </output>
+		  <output class="picking-section__output-to"> 500 руб.</output>
+		  <input class="picking-section__range-from" type="range" id="price-from" min="0" max="1000" step="50" value="100">
+		  <input class="picking-section__range-to" type="range" id="price-to" min="0" max="1000" step="50" value="500">
         </fieldset>
 		
 		<fieldset class="picking-section__fieldset">
@@ -176,37 +187,39 @@
 				<input type="radio" name="fat-content" id="to_10%" value="to_10%" checked>
 			  </li>
 			  <li class="picking-section__item">
-				 <label class="picking-section__label" for="to_30%">до 30%</label>
-				  <input type="radio" name="fat-content" id="to_30%" value="to_30%">
-				</li>
-				<li class="picking-section__item">
-				  <label class="picking-section__label" for="from_30%">выше 30%</label>
-				  <input type="radio" name="fat-content" id="from_30%" value="from_30%">
-				</li>
+				<label class="picking-section__label" for="to_30%">до 30%</label>
+				<input type="radio" name="fat-content" id="to_30%" value="to_30%">
+			  </li>
+			  <li class="picking-section__item">
+				<label class="picking-section__label" for="from_30%">выше 30%</label>
+				<input type="radio" name="fat-content" id="from_30%" value="from_30%">
+			  </li>
             </ul>
 		</fieldset>
 		
 		<fieldset  class="picking-section__fieldset">
 		  <legend class="picking-section__header">Наполнители:</legend>
 		  <ul class="picking-section__list-checkbox">
-			<li class="picking-section__item">
-              <label class="picking-section__label" for="chocolate">шоколадные</label><input type="checkbox" id="chocolate" value="chocolate" checked>
-			</li>
-			<li class="picking-section__item">
-              <label class="picking-section__label" for="sugar">сахарные присыпки</label><input type="checkbox" id="sugar" value="sugar" checked>
-			</li>
-			<li class="picking-section__item">
-              <label class="picking-section__label" for="fruit">фрукты</label><input type="checkbox" id="fruit" value="fruit">
-			</li>
-			<li class="picking-section__item">
-              <label class="picking-section__label" for="syrup">сиропы</label><input type="checkbox" id="syrup" value="syrup">
-			</li>
-              <label class="picking-section__label" for="jam">джемы</label><input type="checkbox" id="jam" value="jam">
-            </li>
+			  <li class="picking-section__item">
+          <label class="picking-section__label" for="chocolate">шоколадные</label>
+          <input type="checkbox" id="chocolate" value="chocolate" checked>
+			  </li>
+  			<li class="picking-section__item">
+          <label class="picking-section__label" for="sugar">сахарные присыпки</label><input type="checkbox" id="sugar" value="sugar" checked>
+	  		</li>
+		  	<li class="picking-section__item">
+          <label class="picking-section__label" for="fruit">фрукты</label><input type="checkbox" id="fruit" value="fruit">
+			  </li>
+			  <li class="picking-section__item">
+          <label class="picking-section__label" for="syrup">сиропы</label><input type="checkbox" id="syrup" value="syrup">
+        </li>
+        <li class="picking-section__item">
+          <label class="picking-section__label" for="jam">джемы</label><input type="checkbox" id="jam" value="jam">
+        </li>
 		  </ul>
 		</fieldset>
 		
-        <button class="picking-section__button button" type="submit">Применить</button>
+      <button class="picking-section__button button" type="submit">Применить</button>
       
 	  </form>    
     </section>
@@ -327,17 +340,33 @@
 <footer class="main-footer">
 
     <ul class="social-media">
-      <li class="social-media__item"><a class="social-media__link tw-btn" href="#">Twitter</a></li>
-      <li class="social-media__item"><a class="social-media__link ig-btn" href="#">Instagram</a></li>
-      <li class="social-media__item"><a class="social-media__link fb-btn" href="#">Facebook</a></li>
-      <li class="social-media__item"><a class="social-media__link vk-btn" href="#">Вконтакте</a></li>
+      <li class="social-media__item">
+	    <a class="social-media__link tw-btn" href="#">Twitter</a>
+	  </li>
+      <li class="social-media__item">
+		<a class="social-media__link ig-btn" href="#">Instagram</a>
+	  </li>
+      <li class="social-media__item">
+	    <a class="social-media__link fb-btn" href="#">Facebook</a>
+	  </li>
+      <li class="social-media__item">
+	    <a class="social-media__link vk-btn" href="#">Вконтакте</a>
+	  </li>
     </ul>
 
     <ul class="additional-information">
-      <li class="additional-information__item"><a class="additional-information__link" href="#"><b>Для поставщиков</b></a></li>
-      <li class="additional-information__item"><a class="additional-information__link" href="#">О производстве</a></li>
-      <li class="additional-information__item"><a class="additional-information__link" href="#">Наши документы</a></li>
-      <li class="additional-information__item"><a class="additional-information__link" href="#">Экологические стандарты</a></li>
+      <li class="additional-information__item">
+	    <a class="additional-information__link for-suppliers" href="#">Для поставщиков</a>
+	  </li>
+      <li class="additional-information__item">
+	    <a class="additional-information__link" href="#">О производстве</a>
+	  </li>
+      <li class="additional-information__item">
+	    <a class="additional-information__link" href="#">Наши документы</a>
+	  </li>
+      <li class="additional-information__item">
+	    <a class="additional-information__link" href="#">Экологические стандарты</a>
+	  </li>
     </ul>
     
     <div class="web-studio-info">

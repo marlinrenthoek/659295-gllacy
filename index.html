@@ -10,111 +10,124 @@
   <link rel="stylesheet" href="css/style.css" />
   
 </head>
+
 <body>
+
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy shop»"></a>
-      <ul class="site-navigation">
-        <li class="site-navigation__item">
+	<div class="header-container">
+	  <nav class="main-navigation">
+	    <ul class="site-navigation">
+	      <li class="site-navigation__item-logo">
+		      <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy shop»"></a>
+	      </li>
+		    <li class="site-navigation__item">
           <a class="site-navigation__link" href="#">Каталог</a>
-          <ul class="site-navigation__dropdown-list">
-            <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link fontBold" href="#">Новинки</a>
-            </li>
+            <ul class="site-navigation__dropdown-list">
+              <li class="site-navigation__dropdown-item">
+                <a class="site-navigation__dropdown-link fontBold" href="#">Новинки</a>
+              </li>
 
-            <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link" href="catalog.html">Сливочное</a>
-            </li>
+              <li class="site-navigation__dropdown-item">
+                <a class="site-navigation__dropdown-link" href="catalog.html">Сливочное</a>
+              </li>
 
-            <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link" href="#">Щербет</a>
-            </li>
+              <li class="site-navigation__dropdown-item">
+                <a class="site-navigation__dropdown-link" href="#">Щербет</a>
+              </li>
 
-            <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link" href="#">Фруктовый лед</a>
-            </li>
+              <li class="site-navigation__dropdown-item">
+                <a class="site-navigation__dropdown-link" href="#">Фруктовый лед</a>
+              </li>
 
-            <li class="site-navigation__dropdown-item">
-              <a class="site-navigation__dropdown-link" href="#">Мелорин</a>
-            </li>
-          
-          </ul>
-        </li>
-        <li class="site-navigation__item"><a class="site-navigation__link" href="#">Доставка и оплата</a></li>
-        <li class="site-navigation__item">
-          <a class="site-navigation__link" href="#">О компании</a></li>
-      </ul>
-    </nav>    
+              <li class="site-navigation__dropdown-item">
+                <a class="site-navigation__dropdown-link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-navigation__item">
+	        <a class="site-navigation__link" href="#">Доставка и оплата</a>
+		  </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">О компании</a>
+		  </li>
+        </ul>
+      </nav>    
 
-    <div class="interactive-menu">
-
-      <a class="interactive-menu__link button" href="#">Поиск по каталогу</a>
-
-	    <label class="interactive-menu__label" for="search">Что ищем</label>
-      <input class="interactive-menu__field" type="text" id="search">
-
-      <a class="interactive-menu__link button" href="#">Вход</a>
-
-	    <form class="interactive-menu__login-form">
       
-  	    <label class="interactive-menu__label" for="interactive-menu__mail">Электронная почта</label>
-        <input class="interactive-menu__field" type="text" id="interactive-menu__mail">
+	  <div class="flex-wrapper">
+	    <section class="interactive-menu">
+	      <ul class="interactive-menu__list">
+	        <li class="interactive-menu__item">
+		      <a class="interactive-menu__link" href="#">Поиск по каталогу</a>
+		      </li>
+		      <li class="interactive-menu__item">
+		        <a class="interactive-menu__link" href="#">Вход</a>
+	        </li>
+		      <li class="interactive-menu__item">
+		        <a class="interactive-menu__link">Корзина</a>
+		      </li>
+	      </ul>
+	    </section>
+	    <p class="schedule-and-contacts">C 10 до 2, ежедневно<a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a></p>
+	  </div>
+	  
+	</div>
+	
+
+    <form class="interactive-menu__search-form">
+	  <label class="interactive-menu__label" for="search">Что ищем</label>
+	  <input class="interactive-menu__field" type="text" id="search">
+	  <button type="submit" class="visually-hidden">Найти</button>
+	</form>  
+		
+	<form class="interactive-menu__login-form">
+      <label class="interactive-menu__label" for="interactive-menu__mail">Электронная почта</label>
+      <input class="interactive-menu__field" type="text" id="interactive-menu__mail">
       
-        <label class="interactive-menu__label" for="interactive-menu__password">Пароль</label>
-        <input class="interactive-menu__field" type="password" id="interactive-menu__password">
+      <label class="interactive-menu__label" for="interactive-menu__password">Пароль</label>
+      <input class="interactive-menu__field" type="password" id="interactive-menu__password">
       
-        <button type="submit" class="interactive-menu__send-form-btn button">Войти</button>
+      <button type="submit" class="interactive-menu__login-form-btn button">Войти</button>
       
-      </form>
+      <a class="interactive-menu__forgot-password-link" href="#">Забыли пароль?</a>
+      <a class="interactive-menu__registration-link" href="#">Новая регистрация</a>
+  </form>
 
-        <a class="interactive-menu__forgot-password-link" href="#">Забыли пароль?</a>
-
-        <a class="interactive-menu__registration-link" href="#">Новая регистрация</a>
-        
-      <section class="basket">
-
-        <a class="basket__link button">Корзина</a>
-
-        <div class="basket-container">
-
-          <table class="basket__table">
-            <tr class="basket__row">
-              <td class="basket__del-button"><button class="basket__button" type="button">Удалить из корзины</button></td>
-              <td class="basket__img"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-              <td class="basket__item">Пломбир с апельсиновым джемом</td>
-              <td class="basket__amount">1,5 кг x </td>
-              <td class="basket__price">200 руб.</td>
-              <td class="basket__total-cost">300 руб.</td>
-            </tr>
+    <form class="basket">
+      <table class="basket__table">
+        <tr class="basket__row">
+          <td class="basket__del-button"><button class="basket__button" type="button">Удалить из корзины</button></td>
+          <td class="basket__img"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+          <td class="basket__item">Пломбир с апельсиновым джемом</td>
+          <td class="basket__amount">1,5 кг x </td>
+          <td class="basket__price">200 руб.</td>
+          <td class="basket__total-cost">300 руб.</td>
+        </tr>
     
-            <tr class="basket__row">
-              <td class="basket__del-button"><button type="button" class="basket__button">Удалить из корзины</button></td>
-              <td class="basket__img"><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-              <td class="basket__item">Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td class="basket__amount">1,5 кг x </td>
-              <td class="basket__price">300 руб.</td>
-              <td class="basket__total-cost">450 руб.</td>
-            </tr>
+        <tr class="basket__row">
+          <td class="basket__del-button"><button type="button" class="basket__button">Удалить из корзины</button></td>
+          <td class="basket__img"><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+          <td class="basket__item">Клубничный пломбир с присыпкой из белого шоколада</td>
+          <td class="basket__amount">1,5 кг x </td>
+          <td class="basket__price">300 руб.</td>
+          <td class="basket__total-cost">450 руб.</td>
+        </tr>
     
-            <tr class="basket__row">
-              <td class="basket__del-button"></td>
-              <td class="basket__img"></td>
-              <td class="basket__item"></td>
-              <td class="basket__amount"></td>
-              <td class="basket__price"></td>
-              <td class="basket__total-cost">Итого: 750руб.</td>
-            </tr>
-          </table>
-
-          <a class="basket__link button" href="#">Оформить заказ</a>
+        <tr class="basket__row">
+          <td class="basket__del-button"></td>
+          <td class="basket__img"></td>
+          <td class="basket__item"></td>
+		  <td class="basket__amount"></td>
+          <td class="basket__price"></td>
+          <td class="basket__total-cost">Итого: 750руб.</td>
+        </tr>
+      </table>
+      <button type="submit" class="basket__sent-form-button button">Оформить заказ</button>
+    </form>
     
-        </div>  
-          
-      </section>
-    
-      <p class="schedule-and-contacts">C 10 до 2, ежедневно <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a></p>
+      
   
-    </div>
+    
   
   </header>
   
@@ -128,17 +141,17 @@
     
       <ul class="slider__list">
         <li class="slider__item">
-          <h3 class="slider__header">Крем-брюле и пломбир с малиновым джемом</h3>
+          <h3 class="slider__header">Крем-брюле и пломбир<br> с малиновым джемом</h3>
           <a class="slider__link button" href="#">Давайте оба!</a>
         </li>
 
         <li class="slider__item">
-          <h3 class="slider__header">Шоколадный пломбир и лимонный сорбет</h3>
+          <h3 class="slider__header">Шоколадный пломбир<br> и лимонный сорбет</h3>
           <a class="slider__link button" href="#">Давайте оба!</a>
         </li>
 
         <li class="slider__item">
-          <h3 class="slider__header">Пломбир с помадкой и клубничный щербет</h3>
+          <h3 class="slider__header">Пломбир с помадкой<br> и клубничный щербет</h3>
           <a class="slider__link button" href="#">Давайте оба!</a>
         </li>
 
@@ -219,72 +232,69 @@
       <p class="shop-info__text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
       <p class="shop-info__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
     </section>
+ 
+	<div class="flex-container">
+	  <section class="blog">
+		<h2 class="visually-hidden">Наш блог</h2>
+        <p class="blog__text">Новое в нашем блоге</p>
+        <a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+      </section>
 
-    <section class="blog">
-      <h2 class="visually-hidden">Наш блог</h2>
-      <p class="blog__text">Новое в нашем блоге</p>
-      <a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-    </section>
+      <section class="subscribe">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <form class="subscribe__form">    
+          <label class="subscribe__label">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
+            
+            <input class="subscribe__input" type="text" name="mail" placeholder="Электронная почта">
+          </label>
+          <button class="subscribe__button button" type="submit">Отправить</button>
+        </form>
+      </section>
+	</div>
 
-    <section class="subscribe">
-      <h2 class="visually-hidden">Подписка на рассылку</h2>
-      <form class="subscribe__form">    
-        <label class="subscribe__label">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
-          <input class="subscribe__input" type="text" name="mail" placeholder="Электронная почта">
-        </label>
-        <button class="subscribe__button button" type="submit">Отправить</button>
-      </form>
-    </section>
-
-    <section class="сontact-info">
-      <h2 class="visually-hidden">Связаться с нами</h2>
-      <img class="contact-info__img" width="1250" height="430" alt="Наш адрес на карте" src="img/map.jpg">
-      <p class="сontact-info__text">Адрес главного офиса и офлайн-магазина: <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-      <p class="сontact-info__text">Для заказов по телефону: <a class="contact-info__link" href="tel:+78124502525">8 812 450-25-25 </a>(c 10 до 20 ежедневно)</p>
-      <a class="сontact-info__link button" href="#">Форма обратной связи</a>
-    </section>
+	
+      <section class="сontact-info">
+        <h2 class="visually-hidden">Связаться с нами</h2>
+        <img class="contact-info__img" width="1250" height="430" alt="Наш адрес на карте" src="img/map.jpg">
+		<div class="сontact-info__container">
+			<p class="сontact-info__text">Адрес главного офиса и офлайн-магазина: </p>
+			<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+			<p class="сontact-info__text">Для заказов по телефону: <a class="contact-info__link" href="tel:+78124502525">8 812 450-25-25 </a>(c 10 до 20 ежедневно)</p>
+			<a class="сontact-info__link button" href="#">Форма обратной связи</a>
+		</div>
+      </section>
 
   </main>
     
   <footer class="main-footer">
     <ul class="social-media">
-      
       <li class="social-media__item">
         <a class="social-media__link tw-btn" href="#">Twitter</a>
       </li>
-
       <li class="social-media__item">
         <a class="social-media__link ig-btn" href="#">Instagram</a>
       </li>
-
       <li class="social-media__item">
         <a class="social-media__link fb-btn" href="#">Facebook</a>
       </li>
-      
       <li class="social-media__item">
         <a class="social-media__link vk-btn" href="#">Вконтакте</a>
       </li>
-
     </ul>
 
     <ul class="additional-information">
-      
       <li class="additional-information__item">
         <a class="additional-information__link for-suppliers" href="#">Для поставщиков</a>
       </li>
-      
       <li class="additional-information__item">
         <a class="additional-information__link" href="#">О производстве</a>
       </li>
-
       <li class="additional-information__item">
         <a class="additional-information__link" href="#">Наши документы</a>
       </li>
-
       <li class="additional-information__item">
         <a class="additional-information__link" href="#">Экологические стандарты</a>
       </li>
-
     </ul>
     
     <div class="web-studio-info">
