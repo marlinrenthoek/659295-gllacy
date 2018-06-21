@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Gllacy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
   
@@ -16,7 +17,7 @@
     <div class="header-container">
 	  <nav class="main-navigation">
         <ul class="site-navigation">
-		  <li class="site-navigation__item">
+		  <li class="site-navigation__item-logo">
 	        <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy shop»"></a>
 		  </li>
           <li class="site-navigation__item">
@@ -25,19 +26,15 @@
               <li class="site-navigation__dropdown-item">
                 <a class="site-navigation__dropdown-link fontBold" href="#">Новинки</a>
               </li>
-
               <li class="site-navigation__dropdown-item --active">
                 <a class="site-navigation__dropdown-link">Сливочное</a>
               </li>
-
               <li class="site-navigation__dropdown-item">
                 <a class="site-navigation__dropdown-link" href="#">Щербет</a>
               </li>
-
               <li class="site-navigation__dropdown-item">
                 <a class="site-navigation__dropdown-link" href="#">Фруктовый лед</a>
               </li>
-
               <li class="site-navigation__dropdown-item">
                 <a class="site-navigation__dropdown-link" href="#">Мелорин</a>
               </li>
@@ -56,13 +53,13 @@
 		<section class="interactive-menu">
 		  <ul class="interactive-menu__list">
 	        <li class="interactive-menu__item">
-	          <a class="interactive-menu__link" href="#">Поиск по каталогу</a>
+	          <a class="interactive-menu__link" href="#"><span class="visually-hidden">Поиск по каталогу</span></a>
 	        </li>
 		    <li class="interactive-menu__item">
 		      <a class="interactive-menu__link" href="#">Вход</a>
 	        </li>
 		    <li class="interactive-menu__item">
-		      <a class="interactive-menu__link">Корзина</a>
+		      <a class="interactive-menu__link" href="#">Корзина</a>
 	        </li>
 	      </ul>
 	    </section>
@@ -86,11 +83,10 @@
       
       <button type="submit" class="interactive-menu__login-form-btn button">Войти</button>
 
-    </form>
-
-<!-- !!!! -->      <a class="interactive-menu__forgot-password-link" href="#">Забыли пароль?</a>
-
-<!-- !!!! -->       <a class="interactive-menu__registration-link" href="#">Новая регистрация</a>
+	  <a class="interactive-menu__forgot-password-link" href="#">Забыли пароль?</a>
+	  <a class="interactive-menu__registration-link" href="#">Новая регистрация</a>
+    
+	</form>
 
     <form class="basket">
       <table class="basket__table">
@@ -180,19 +176,19 @@
 			<ul class="picking-section__list-radio">
 			  <li class="picking-section__item">
 				<label class="picking-section__label" for="0%">0%</label>
-				<input type="radio" name="fat-content" id="0%" value="0%">
+				<input class="visually-hidden" type="radio" name="fat-content" id="0%" value="0%">
 			  </li>
 			  <li class="picking-section__item">
 				<label class="picking-section__label" for="to_10%">до 10%</label>
-				<input type="radio" name="fat-content" id="to_10%" value="to_10%" checked>
+				<input class="visually-hidden" type="radio" name="fat-content" id="to_10%" value="to_10%" checked>
 			  </li>
 			  <li class="picking-section__item">
 				<label class="picking-section__label" for="to_30%">до 30%</label>
-				<input type="radio" name="fat-content" id="to_30%" value="to_30%">
+				<input class="visually-hidden" type="radio" name="fat-content" id="to_30%" value="to_30%">
 			  </li>
 			  <li class="picking-section__item">
 				<label class="picking-section__label" for="from_30%">выше 30%</label>
-				<input type="radio" name="fat-content" id="from_30%" value="from_30%">
+				<input class="visually-hidden" type="radio" name="fat-content" id="from_30%" value="from_30%">
 			  </li>
             </ul>
 		</fieldset>
@@ -202,19 +198,19 @@
 		  <ul class="picking-section__list-checkbox">
 			  <li class="picking-section__item">
           <label class="picking-section__label" for="chocolate">шоколадные</label>
-          <input type="checkbox" id="chocolate" value="chocolate" checked>
+          <input class="visually-hidden" type="checkbox" id="chocolate" value="chocolate" checked>
 			  </li>
   			<li class="picking-section__item">
-          <label class="picking-section__label" for="sugar">сахарные присыпки</label><input type="checkbox" id="sugar" value="sugar" checked>
+          <label class="picking-section__label" for="sugar">сахарные присыпки</label><input class="visually-hidden" type="checkbox" id="sugar" value="sugar" checked>
 	  		</li>
 		  	<li class="picking-section__item">
-          <label class="picking-section__label" for="fruit">фрукты</label><input type="checkbox" id="fruit" value="fruit">
+          <label class="picking-section__label" for="fruit">фрукты</label><input class="visually-hidden" type="checkbox" id="fruit" value="fruit">
 			  </li>
 			  <li class="picking-section__item">
-          <label class="picking-section__label" for="syrup">сиропы</label><input type="checkbox" id="syrup" value="syrup">
+          <label class="picking-section__label" for="syrup">сиропы</label><input class="visually-hidden" type="checkbox" id="syrup" value="syrup">
         </li>
         <li class="picking-section__item">
-          <label class="picking-section__label" for="jam">джемы</label><input type="checkbox" id="jam" value="jam">
+          <label class="picking-section__label" for="jam">джемы</label><input class="visually-hidden" type="checkbox" id="jam" value="jam">
         </li>
 		  </ul>
 		</fieldset>
@@ -318,6 +314,9 @@
       <h2 class="visually-hidden">Навигация по номерам страниц</h2>
 
       <ul class="pagination__list">
+		<li class="pagination__item">
+          <a class="pagination__link" href="#"><span class="visually-hidden">Предыдущая страница</span></a>
+        </li>
         <li class="pagination__item">
           <a class="pagination__link --active">1</a>
         </li>
@@ -333,6 +332,9 @@
         <li class="pagination__item">
           <a class="pagination__link" href="#">5</a>
         </li>
+		<li class="pagination__item">
+          <a class="pagination__link" href="#"><span class="visually-hidden">Следующая страница</span></a>
+        </li>
       </ul>
     </nav>
 </main>
@@ -341,16 +343,16 @@
 
     <ul class="social-media">
       <li class="social-media__item">
-	    <a class="social-media__link tw-btn" href="#">Twitter</a>
+	    <a class="social-media__link tw-btn" href="#"><span class="visually-hidden">Twitter</span></a>
 	  </li>
       <li class="social-media__item">
-		<a class="social-media__link ig-btn" href="#">Instagram</a>
+		<a class="social-media__link ig-btn" href="#"><span class="visually-hidden">Instagram</span></a>
 	  </li>
       <li class="social-media__item">
-	    <a class="social-media__link fb-btn" href="#">Facebook</a>
+	    <a class="social-media__link fb-btn" href="#"><span class="visually-hidden">Facebook</span></a>
 	  </li>
       <li class="social-media__item">
-	    <a class="social-media__link vk-btn" href="#">Вконтакте</a>
+	    <a class="social-media__link vk-btn" href="#"><span class="visually-hidden">Вконтакте</span></a>
 	  </li>
     </ul>
 

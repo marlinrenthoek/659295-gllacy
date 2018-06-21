@@ -60,7 +60,7 @@
             </a>
           </li>
           <li class="interactive-menu__item">
-            <a class="interactive-menu__link">Корзина</a>
+            <a class="interactive-menu__link" href="#">Корзина</a>
           </li>
         </ul>
         <p class="schedule-and-contacts">C 10 до 20, ежедневно <a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a></p>
@@ -169,13 +169,13 @@
               <ul class="special-offers__list">
                 <li class="special-offers__item">
                   <h3 class="special-offers__header">Малинка даром!</h3>
-                  <p class="special-offers__text">При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                  <p class="special-offers__text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                   <a class="special-offers__link button" href="#">Хочу варенье!</a>
                 </li>
 
                 <li class="special-offers__item">
                   <h3 class="special-offers__header">Шоколадки даром!</h3>
-                  <p class="special-offers__text">При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                  <p class="special-offers__text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                   <a class="special-offers__link button" href="#">Хочу шоколадки!</a>
                 </li>
               </ul>
@@ -236,6 +236,7 @@
           </section>
 
           <section class="subscribe">
+		    <div class="subscribe-container">
             <h2 class="visually-hidden">Подписка на рассылку</h2>
             <p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p> 
             <form class="subscribe__form">   
@@ -244,6 +245,7 @@
               </label>
               <button class="subscribe__button button" type="submit">Отправить</button>
             </form>
+			</div>
           </section>
         </div>
 
@@ -265,16 +267,24 @@
   <footer class="main-footer">
     <ul class="social-media">
       <li class="social-media__item">
-        <a class="social-media__link tw-btn" href="#">Twitter</a>
+        <a class="social-media__link tw-btn" href="#">
+		  
+		  <span class="visually-hidden">Twitter</span></a>
       </li>
       <li class="social-media__item">
-        <a class="social-media__link ig-btn" href="#">Instagram</a>
+        <a class="social-media__link ig-btn" href="#">
+		  
+		  <span class="visually-hidden">Instagram</span></a>
       </li>
       <li class="social-media__item">
-        <a class="social-media__link fb-btn" href="#">Facebook</a>
+        <a class="social-media__link fb-btn" href="#">
+		  
+		  <span class="visually-hidden">Facebook</span></a>
       </li>
       <li class="social-media__item">
-        <a class="social-media__link vk-btn" href="#">Вконтакте</a>
+        <a class="social-media__link vk-btn" href="#">
+		  
+		  <span class="visually-hidden">Вконтакте</span></a>
       </li>
     </ul>
 
@@ -316,7 +326,7 @@
     <label class="feedback-form__label" for="email">"Ваша почта для ответа?"</label>
 
     <label class="feedback-form__label">Напишите что-нибудь  
-      <textarea class="feedback-form__textarea" placeholder="Напишите что-нибудь..."></textarea>
+      <textarea class="feedback-form__textarea"></textarea>
     </label>
 
     <button class="feedback-form__button button" type="submit">Отправить</button>
