@@ -8,7 +8,7 @@ body {
   line-height: 22px;
   color: #fff;
   background-color: #849d8f;
-  background-image: url(../img/backlight.png);
+  background-image: linear-gradient(to bottom,rgba(255,255,255,.2),transparent);
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -94,6 +94,13 @@ img {
   height: 1px;
   margin: -1px;
 }
+.slider__item:nth-child(2),
+.slider__item:nth-child(3),
+.slider-navigation,
+.features__link,
+.feedback-form {
+  display: none;
+}
 
 .slider-controls {
   padding: 0;
@@ -103,7 +110,6 @@ img {
   top: 480px;
   left: 27px;
   list-style: none;
-  
 }
 
 .slider-control {
@@ -113,6 +119,7 @@ img {
   border-radius: 50%;
   background-repeat: no-repeat;
 }
+
 .slider-control:checked {
   background-color: #fff;
   background-image: url(../img/radio-on.svg);
@@ -165,7 +172,8 @@ img {
 }
 
 .site-navigation__item {
-  margin-top: 19px; 
+  margin-top: 19px;
+  position: relative; 
 }
 
 .site-navigation__item-logo {
@@ -206,52 +214,68 @@ img {
   border-radius: 20px;
 }
 
-.display-dropdown:hover ~ .site-navigation__dropdown-list {
-  display: block;
-  position: absolute;
-  border-bottom: 5px solid transparent;
-}  
+
 
 .site-navigation__dropdown-list {
+  display: none;
   padding: 0;
   margin: 0;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
   list-style: none;
   background-color: #f8f7f4;
-  
+  border-radius: 5px;
 }
+
+.display-dropdown:hover .site-navigation__dropdown-list {
+  display: block;
+  position: absolute;
+  top: 33px;
+  left: -6px;
+}  
 
 .site-navigation__dropdown-link {
   display: block;
-  padding: 21px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 18px;
+  padding-right: 23px; 
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   background-color: #f8f7f4;
   color: #323232;
- 
+  white-space: nowrap;
 }
 
+.site-navigation__dropdown-item:first-child .site-navigation__dropdown-link {
+  padding: 11px 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
 .site-navigation__dropdown-item:last-child .site-navigation__dropdown-link {
-  padding-bottom: 10px;  
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  padding-bottom: 12px;  
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .site-navigation__dropdown-link.fontBold {
   font-weight: 700;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, #fff 0, #fff 5px, rgba(129, 129, 192, 0.2) 5px, rgba(129, 129, 192, 0.2) 133px, #fff 133px, #fff 143px);
 }
 
 .site-navigation__dropdown-link:hover {
   background-color: #fbded7; 
+  color: #323232;
 }
 .site-navigation__dropdown-link:active {
   background-color: #f6b5a5;
+  color: #323232;
 }
 .site-navigation__dropdown-link.--active {
   background-color: #d07058;
+  color: #fff;
 }
 
 .interactive-menu {
@@ -259,13 +283,6 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-}
-
-.interactive-menu__login-form {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  
 }
 
 .interactive-menu__list {
@@ -279,6 +296,7 @@ img {
 }
 
 .interactive-menu__item {
+  position: relative;
   margin-left: 10px;
   margin-bottom: 10px;
 }
@@ -298,6 +316,11 @@ img {
   padding-left: 43px; 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px;  
+}
+
+.only-icon {
+  padding-left: 16px;
+  margin-right: 0px;
 }
 
 .interactive-menu__search-icon {
@@ -322,11 +345,6 @@ img {
   left: 16px;
   width: 21px;
   height: 20px;
-}
-
-.interactive-menu__link.only-icon {
-  padding-left: 16px;
-  margin-right: 0px;
 }
 
 .interactive-menu__link:hover,
@@ -354,32 +372,75 @@ img {
 	position: relative;
 	margin: 0;
 	margin-bottom: 20px;
-	
 }
 
 .interactive-menu__label-search,
 .interactive-menu__label-mail,
 .interactive-menu__label-password {
+  position: absolute;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 16px;
   font-weight: 400;
-  color: #999999;
+  color: #818181;
   background-color: transparent;
 }
 
+.modal {
+  padding: 20px 15px;
+  background-color: #f8f7f4;
+  position: absolute;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.interactive-menu__search-form {
+  display: none;
+}
+
+.search:hover .interactive-menu__search-form {
+  display: block;
+  position: absolute;
+  top: 32px;
+  right: -2px;
+}
+
 .interactive-menu__label-search {
-  top: 30px;
-  left: 33px;
+  top: 35px;
+  left: 30px;
+}
+
+.interactive-menu input {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+  padding: 14px;
+  padding-bottom: 12px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.interactive-menu__field-search {
+  width: 311px;
+}
+
+.enter:hover .interactive-menu__login-form {
+  display: flex;
+
+}
+
+.interactive-menu__login-form {
+  flex-direction: column;
+  position: absolute;
+  top: 32px;
+  right: -3px;
+  z-index: 2;
 }
 
 .interactive-menu__label-mail,
 .interactive-menu__label-password {
   top: 10px;
   left: 15px;
-}
-
-.interactive-menu__field-search {
-  width: 200px;
 }
 
 .interactive-menu__field-mail,
@@ -596,6 +657,7 @@ img {
 .picking-section__item-radio {
   position: relative;
 }
+
 .picking-section__label::before {
   content: "";
   position: absolute;
@@ -611,6 +673,7 @@ img {
 .picking-section__item-radio:checked ~ .picking-section__label::before {
   background-image: url(../img/radio-on.png);
 }
+
 .picking-section__label:hover::before {
   opacity: 1;
 }
@@ -639,23 +702,14 @@ img {
 }
 
 .picking-section__button:hover {
-  border: #fff;
-  font-size: 14px;
   color: black;
   background-color: rgba(248, 247, 244, 1);
   background-image: none;
   box-shadow: none;
   text-shadow: none;
-  
 }
 
-.modal {
-  padding: 20px;
-  background-color: #f8f7f4;
-  position: absolute;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-}
+
 
 
 .picking-section__button:active {
@@ -1250,21 +1304,6 @@ img {
 
 
 /*временно скрыла выпадашки*/
-.site-navigation__dropdown-list {
-  display: none;
-}
-
-.interactive-menu__search-form {
-  display: none;
-	position: absolute;
-	top: 300px;
-}
-
-.interactive-menu__login-form {
-  display: none;
-	position: absolute;
-	top: 400px;
-}
 
 .basket {
   display: none;
@@ -1273,10 +1312,4 @@ img {
 	left: 600px;
 }
 
-.slider__item:nth-child(2),
-.slider__item:nth-child(3),
-.slider-navigation,
-.features__link,
-.feedback-form {
-  display: none;
-}
+
