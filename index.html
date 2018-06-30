@@ -19,17 +19,15 @@
               
     <div class="site-wrapper">
       <header class="main-header center">
-        <div class="header-container">
+
           <nav class="main-navigation">
+		    <a class="main-navigation__logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy shop»"></a>
             <ul class="site-navigation">
-              <li class="site-navigation__item-logo">
-                <a class="site-navigation__link-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy shop»"></a>
-              </li>
               <li class="site-navigation__item display-dropdown">
                 <a class="site-navigation__link" href="#">Каталог</a>
                 <ul class="site-navigation__dropdown-list">
                   <li class="site-navigation__dropdown-item">
-                    <a class="site-navigation__dropdown-link fontBold" href="#">Новинки</a>
+                    <a class="site-navigation__dropdown-link font-bold" href="#">Новинки</a>
                   </li>
                   <li class="site-navigation__dropdown-item">
                     <a class="site-navigation__dropdown-link" href="catalog.html">Сливочное</a>
@@ -143,7 +141,7 @@
             </ul>
             <p class="schedule-and-contacts"><span class="schedule-text">C 10 до 20, ежедневно </span><a class="phone-number" href="tel:+78124502525">8 812 450-25-25</a></p>
           </section>
-        </div>
+
       </header>
           
       <main class="main-container">
@@ -191,28 +189,36 @@
           <h2 class="visually-hidden">Популярные товары</h2>
           <ul class="features__list">
             <li class="features__item hit">
-                <img src="img/orange.jpg" width="266" height="266" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+			  <div class="features__item-container">
+				<img src="img/orange.jpg" width="266" height="266" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 <p class="features__price">310&#8381;<span>/кг</span></p>
                 <a class="features__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 <a class="features__link button" href="#">Быстрый просмотр</a>
+			  </div>
             </li>
             <li class="features__item hit">
+			  <div class="features__item-container">
                 <img src="img/coffee.jpg" width="268" height="268" alt="Сливочно-кофейное с кусочками шоколада">
                 <p class="features__price">380&#8381;<span>/кг</span></p>
                 <a class="features__title" href="#">Сливочно-кофейное с кусочками шоколада</a>
                 <a class="features__link button" href="#">Быстрый просмотр</a>
+			  </div>
             </li>
             <li class="features__item hit">
+			  <div class="features__item-container">
                 <img src="img/strawberry.jpg" width="268" height="268" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 <p class="features__price">355&#8381;<span>/кг</span></p>
                 <a class="features__title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <a class="features__link button" href="#">Быстрый просмотр</a>
+			  </div>
             </li>
             <li class="features__item hit">
+			  <div class="features__item-container">
                 <img src="img/caramel.jpg" width="268" height="268" alt="Сливочное крем-брюле с карамельной подливкой">
                 <p class="features__price">415&#8381;<span>/кг</span></p>
                 <a class="features__title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
                 <a class="features__link button" href="#">Быстрый просмотр</a>
+			  </div>
             </li>   
           </ul>
         </section>
@@ -240,8 +246,8 @@
               <h2 class="visually-hidden">Подписка на рассылку</h2>
               <p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p> 
               <form class="subscribe__form">   
-                <label for="subscibe-mail" class="subscribe__label">Электронная почта</label> 
                 <input class="subscribe__field-mail" type="text" name="mail" id="subscibe-mail">
+				<label for="subscibe-mail" class="subscribe__label">Электронная почта</label> 
                 <button class="subscribe__button button" type="submit">Отправить</button>
               </form>
             </div>
