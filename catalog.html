@@ -131,7 +131,7 @@
       
     </header>
 
-    <main class="container">
+    <main>
       <nav class="breadcrumbs center">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
@@ -156,21 +156,25 @@
  
           <fieldset class="picking-section__fieldset">
             <legend class="picking-section__header">Сортировка:</legend>
-            <select class="picking-section__select">
-              <option class="picking-section__option" selected>по популярности</option>
-              <option class="picking-section__option">сначала недорогие</option>
-              <option class="picking-section__option">сначала дорогие</option>
-              <option class="picking-section__option">по жирности</option>
-            </select>
+            <div class="select-container">
+              <select class="picking-section__select">
+                <option class="picking-section__option" selected>по популярности</option>
+                <option class="picking-section__option">сначала недорогие</option>
+                <option class="picking-section__option">сначала дорогие</option>
+                <option class="picking-section__option">по жирности</option>
+              </select>
+            </div>
           </fieldset>
       
           <fieldset class="picking-section__fieldset">
             <legend class="picking-section__header">Цена: 100 руб. - 500 руб.</legend>
-            <output class="picking-section__output-from"></output>
-            <output class="picking-section__output-to"> </output>
-            <div class="temporary">
-<!--            <input class="picking-section__range-from" type="range" id="price-from" min="0" max="1000" step="50" value="100">
-            <input class="picking-section__range-to" type="range" id="price-to" min="0" max="1000" step="50" value="500">-->
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="filter-area">
+                  <div class="selected-area"></div>
+                </div>
+              <div class="picking-section__range range-from"></div>
+              <div class="picking-section__range range-to"></div>
             </div>
           </fieldset>
       
@@ -265,7 +269,7 @@
 			<div class="features__item-container">
               <img class="features__image" src="img/cowberry.jpg" alt="Сливочное с брусничным джемом">
               <p class="features__price">325<span>/кг</span></p>
-              <a class="features__title" href="#">Сливочное с брусничным джемом</a>
+              <a class="features__title short-text" href="#">Сливочное с брусничным джемом</a>
               <a class="features__link button" href="#">Быстрый просмотр</a>
 			</div>
           </li>
@@ -297,7 +301,7 @@
 		    <div class="features__item-container">
 			  <img class="features__image" src="img/vanil-and-chocolate-chips.jpg" alt="Сливочно-ванильное с кусочками шоколада">
               <p class="features__price">440<span>/кг</span></p>
-              <a class="features__title" href="#">Сливочно-ванильное с кусочками шоколада</a>
+              <a class="features__title short-text" href="#">Сливочно-ванильное с кусочками шоколада</a>
               <a class="features__link button" href="#">Быстрый просмотр</a>
 			</div>
           </li>
