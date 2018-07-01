@@ -63,8 +63,8 @@
                 </a>
                 <div class="modal-container">
                   <form class="interactive-menu__search-form modal">
-                    <input class="interactive-menu__field-search" type="text" id="search">
-                    <label class="interactive-menu__label-search" for="search">Что ищем?</label>
+                    <input class="interactive-menu__field-search" type="text" id="search" placeholder="Что ищем?">
+                    <label class="interactive-menu__label-search" for="search"></label>
                     <button type="submit" class="visually-hidden">Найти</button>
                   </form>
                 </div>
@@ -81,12 +81,12 @@
                 <div class="modal-container">
                   <form class="interactive-menu__login-form modal">
                     <p class="login-form-container">
-                      <input class="interactive-menu__field-mail" type="text" id="interactive-menu__mail" value="">
-                      <label class="interactive-menu__label-mail" for="interactive-menu__mail">Электронная почта</label>
+                      <input class="interactive-menu__field-mail" type="text" id="interactive-menu__mail" placeholder="Электронная почта">
+                      <label class="interactive-menu__label-mail" for="interactive-menu__mail"></label>
                     </p>
                     <p class="login-form-container"> 
-                      <input class="interactive-menu__field-password" type="password" id="interactive-menu__password">
-                      <label class="interactive-menu__label-password" for="interactive-menu__password">Пароль</label>
+                      <input class="interactive-menu__field-password" type="password" id="interactive-menu__password" placeholder="Пароль">
+                      <label class="interactive-menu__label-password" for="interactive-menu__password"></label>
                     </p>
                     <div class="login-form-flex-container">
                       <button type="submit" class="interactive-menu__login-form-btn button">Войти</button>
@@ -107,10 +107,10 @@
                   </svg>
                 </a>
                 <div class="modal-container">
-                  <form class="interactive-menu__basket-form modal">
+<!--                  <form class="interactive-menu__basket-form modal">
                     <table class="basket__table">
                       <tr class="basket__row">
-                        <td class="basket__del-button"><button class="basket__button visually-hidden" type="button">Удалить из корзины</button></td>
+                        <td class="basket__del-button"><button class="basket__button" type="button">Удалить из корзины</button></td>
                         <td class="basket__img"><img src="img/orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                         <td class="basket__item">Пломбир с апельсиновым джемом</td>
                         <td class="basket__amount">1,5 кг x </td>
@@ -118,7 +118,7 @@
                         <td class="basket__total-cost">300 руб.</td>
                       </tr>
                       <tr class="basket__row">
-                        <td class="basket__del-button"><button type="button" class="basket__button visually-hidden">Удалить из корзины</button></td>
+                        <td class="basket__del-button"><button class="basket__button" type="button">Удалить из корзины</button></td>
                         <td class="basket__img"><img src="img/strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
                         <td class="basket__item">Клубничный пломбир с присыпкой из белого шоколада</td>
                         <td class="basket__amount">1,5 кг x </td>
@@ -126,16 +126,11 @@
                         <td class="basket__total-cost">450 руб.</td>
                       </tr>
                       <tr class="basket__row">
-                        <td class="basket__del-button"></td>
-                        <td class="basket__img"></td>
-                        <td class="basket__item"></td>
-                        <td class="basket__amount"></td>
-                        <td class="basket__price"></td>
-                        <td class="basket__total-cost">Итого: 750руб.</td>
+                        <td class="basket__final-total" colspan="6">Итого: 750руб.</td>
                       </tr>
                     </table>
                     <button type="submit" class="basket__sent-form-button button">Оформить заказ</button>
-                  </form>
+                  </form> -->
                 </div>
               </li>
             </ul>
@@ -185,13 +180,13 @@
           </ul>
         </section>
 
-        <section class="features center">
+        <section class="features index-features center">
           <h2 class="visually-hidden">Популярные товары</h2>
           <ul class="features__list">
             <li class="features__item hit">
 			  <div class="features__item-container">
 				<img src="img/orange.jpg" width="266" height="266" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                <p class="features__price">310&#8381;<span>/кг</span></p>
+                <p class="features__price">310<span>/кг</span></p>
                 <a class="features__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 <a class="features__link button" href="#">Быстрый просмотр</a>
 			  </div>
@@ -199,7 +194,7 @@
             <li class="features__item hit">
 			  <div class="features__item-container">
                 <img src="img/coffee.jpg" width="268" height="268" alt="Сливочно-кофейное с кусочками шоколада">
-                <p class="features__price">380&#8381;<span>/кг</span></p>
+                <p class="features__price">380<span>/кг</span></p>
                 <a class="features__title" href="#">Сливочно-кофейное с кусочками шоколада</a>
                 <a class="features__link button" href="#">Быстрый просмотр</a>
 			  </div>
@@ -207,7 +202,7 @@
             <li class="features__item hit">
 			  <div class="features__item-container">
                 <img src="img/strawberry.jpg" width="268" height="268" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <p class="features__price">355&#8381;<span>/кг</span></p>
+                <p class="features__price">355<span>/кг</span></p>
                 <a class="features__title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <a class="features__link button" href="#">Быстрый просмотр</a>
 			  </div>
@@ -215,7 +210,7 @@
             <li class="features__item hit">
 			  <div class="features__item-container">
                 <img src="img/caramel.jpg" width="268" height="268" alt="Сливочное крем-брюле с карамельной подливкой">
-                <p class="features__price">415&#8381;<span>/кг</span></p>
+                <p class="features__price">415<span>/кг</span></p>
                 <a class="features__title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
                 <a class="features__link button" href="#">Быстрый просмотр</a>
 			  </div>
@@ -246,16 +241,17 @@
               <h2 class="visually-hidden">Подписка на рассылку</h2>
               <p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p> 
               <form class="subscribe__form">   
-                <input class="subscribe__field-mail" type="text" name="mail" id="subscibe-mail">
-				<label for="subscibe-mail" class="subscribe__label">Электронная почта</label> 
+                <input class="subscribe__field-mail" type="text" name="mail" id="subscibe-mail" placeholder="Электронная почта">
+ 	        			<label for="subscibe-mail" class="subscribe__label"></label> 
                 <button class="subscribe__button button" type="submit">Отправить</button>
               </form>
             </div>
           </section>
         </div>  
 
-        <section class="сontact-info">
+        <section class="сontact-info center">
           <h2 class="visually-hidden">Связаться с нами</h2>
+          <iframe class="interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.320894615867413!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sus!4v1530443651230" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
           <img class="contact-info__img" width="1200" height="430" alt="Наш адрес на карте" src="img/map.jpg">
           <div class="сontact-info__container">
             <p class="сontact-info__text">Адрес главного офиса и офлайн-магазина: </p>
@@ -267,19 +263,19 @@
           </div>
 
           <form class="feedback-form modal">
-            <button class="feedback-form__close-button"></button>
+            <button class="feedback-form__close-button" type="button"></button>
             <h3 class="feedback-form__header">Мы обязательно вам ответим!</h3>
             <p class="feedback-form__container">
-              <input class="feedback-form__field-name" type="text" name="name" id="name">
-              <label class="feedback-form__label-name" for="name">Как вас зовут?</label>
+              <input class="feedback-form__field-name" type="text" name="name" id="name" placeholder="Как вас зовут?">
+              <label class="feedback-form__label-name" for="name"></label>
             </p>
             <p class="feedback-form__container">
-              <input class="feedback-form__field-mail" type="text" name="email" id="email">
-              <label class="feedback-form__label-mail" for="email">Ваша почта для ответа?</label>
+              <input class="feedback-form__field-mail" type="text" name="email" id="email" placeholder="Ваша почта для ответа?">
+              <label class="feedback-form__label-mail" for="email"></label>
             </p>
             <p class="feedback-form__container">
-              <textarea class="feedback-form__field-textarea" id="text"></textarea>
-              <label class="feedback-form__label-text" for="text">Напишите что-нибудь</label>  
+              <textarea class="feedback-form__field-textarea" id="text" placeholder="Напишите что-нибудь"></textarea>
+              <label class="feedback-form__label-text" for="text"></label>  
             </p>
             <button class="feedback-form__button button" type="submit">Отправить</button>
           </form>
@@ -329,12 +325,12 @@
             <img class="web-studio-info__logo-image" width="108" height="39" src="img/logo-htmlacademy.svg" alt="Логотип Html Academy">
           </a>
 
-          <p class="web-studio-info__text">Сделано в <a class="web-studio-info__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>© 2017</p>
+          <p class="web-studio-info__text">Сделано в <a class="web-studio-info__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
         </div>
       </footer>
     </div>
 
-    <script src="main.js"></script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>
