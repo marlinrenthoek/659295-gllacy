@@ -328,7 +328,7 @@ img {
 
 .interactive-menu__item {
   position: relative;
-  margin-right: 11px;
+  margin-right: 7px;
   cursor: pointer;
 }
 
@@ -688,7 +688,7 @@ img {
 }
 
 .breadcrumbs {
-  margin-bottom: 11px;
+  margin-bottom: 2px;
 }
 
 .breadcrumbs__list {
@@ -701,6 +701,7 @@ img {
 .breadcrumbs__item {
   margin-right: 22px;
 }
+
 .breadcrumbs__link {
   position: relative;
   font-size: 14px;
@@ -723,14 +724,14 @@ img {
 }
 
 .container__header {
-  margin-bottom: 36px;
+  margin-bottom: 26px;
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
 }
 
 .picking-section {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -744,6 +745,7 @@ img {
 
 .picking-section__fieldset {
   padding: 0;
+  margin: 0;
   margin-right: 15px;
   margin-bottom: 16px;
   border: none;
@@ -751,23 +753,23 @@ img {
 
 .picking-section__header {
   margin-bottom: 6px;
-  padding-left: 14px;
+  padding-left: 16px;
 }
 
 .picking-section__select {
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-left: 14px;
+  padding-left: 16px;
   padding-right: 32px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #fff;
   background-color: rgba(248, 247, 244, 0.2);
-  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
+  appearance: none;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -846,15 +848,9 @@ img {
 
 .picking-section__label {
   padding-left: 37px;
-  padding-right: 14px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-}
-
-.picking-section__item-radio .picking-section__label {
-  padding-left: 36px;
-  padding-right: 13px;
 }
 
 .picking-section__range-from {
@@ -869,20 +865,14 @@ img {
   padding-right: 0;
 }
 
-.fat-content,
-.fillers {
+.picking-section__list {
   display: flex;
   flex-direction: row;
   margin: 0;
-  padding: 9px;
+  padding: 9px 16px;
   list-style: none;
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 25px;
-}
-
-.fat-content {
-  position: relative;
-  padding-right: 5px;
 }
 
 .picking-section__item {
@@ -905,44 +895,63 @@ img {
   opacity: 0.4;
 }
 
-.fat-content .picking-section__label::before {
+.fat-content {
+  padding-right: 18px;
+}
+
+.fat-content-item {
+  margin-right: 18px;
+}
+
+.fat-content-item:last-child {
+  margin-right: 0;
+}
+
+.fat-content__label {
+  padding-left: 31px;
+}
+
+.fat-content__label::before {
   top: -2px;
-  left: 6px;
+  left: 0px;
   width: 22px;
   height: 22px;
   background-image: url(../img/radio-off.png);
 }
 
-.fat-content input:checked ~ .picking-section__label::before {
+.fat-content input:checked ~ .fat-content__label::before {
   background-image: url(../img/radio-on.png);
 }
 
 .fillers {
-  padding-right: 5px;
+  padding-left: 13px;
 }
 
-.fillers .picking-section__label {
-  padding-left: 40px;
-  padding-right: 14px;
+.fillers-item {
+  margin-right: 20px;
 }
 
-.fillers .picking-section__label::before {
-  top: -2px;
-  left: 6px;
+.fillers-item:last-child {
+  margin-right: 0;
+}
+
+.fillers__label {
+  padding-left: 34px;
+}
+
+.fillers__label::before {
+  top: -1px;
+  left: 0px;
   width: 20px;
   height: 20px;
   background-image: url(../img/checkbox-off.png);
 }
 
-.fillers input:checked ~ .picking-section__label::before {
+.fillers input:checked ~ .fillers__label::before {
+  left: 2px;
   width: 24px;
   height: 20px;
   background-image: url(../img/checkbox-on.png);
-}
-
-.fillers input:checked ~ .picking-section__label {
-  padding-left: 37px;
-  padding-right: 14px;
 }
 
 .picking-section__button {
