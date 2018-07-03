@@ -13,7 +13,7 @@
   <body>
     <header class="main-header center">
       <nav class="main-navigation">
-	    <a class="main-navigation__logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy shop»"></a>
+	    <a class="main-navigation__logo" href="index.html"><img class="gllacy-logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy shop»"></a>
         <ul class="site-navigation">
           <li class="site-navigation__item display-dropdown">
             <a class="site-navigation__link --active" href="catalog.html">Каталог</a>
@@ -82,15 +82,15 @@
                   <div class="login-form-flex-container">
                     <button type="submit" class="interactive-menu__login-form-btn button">Войти</button>
                     <p class="login-form-container login-form-column"> 
-                    <a class="interactive-menu__forgot-password-link" href="#">Забыли пароль?</a>
-                    <a class="interactive-menu__registration-link" href="#">Новая регистрация</a>
+                    <a class="interactive-menu__forgot-password-link white-background" href="#">Забыли пароль?</a>
+                    <a class="interactive-menu__registration-link white-background" href="#">Новая регистрация</a>
                     </p>
                   </div>
                 </form>
               </div>
             </li>
             <li class="interactive-menu__item basket-item">
-              <a class="interactive-menu__link basket basket-full" href="#"><span class="basket-status">2 товара</span>
+              <a class="interactive-menu__link basket basket-full__link" href="#"><span class="basket-status">2 товара</span>
                 <svg class="interactive-menu__basket-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
                   <path class="basket-full" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
                   <circle fill="#343434" cx="6.984" cy="18" r="2"/>
@@ -156,7 +156,7 @@
  
           <fieldset class="picking-section__fieldset">
             <legend class="picking-section__header">Сортировка:</legend>
-            <div class="select-container">
+            <div class="select-container" tabindex="0">
               <select class="picking-section__select">
                 <option class="picking-section__option" selected>по популярности</option>
                 <option class="picking-section__option">сначала недорогие</option>
@@ -169,10 +169,9 @@
           <fieldset class="picking-section__fieldset">
             <legend class="picking-section__header">Цена: 100 руб. - 500 руб.</legend>
             <div class="range-filter">
-              <div class="range-controls">
-                <div class="filter-area">
-                  <div class="selected-area"></div>
-                </div>
+              <div class="filter-area">
+                <div class="selected-area"></div>
+              </div>
               <div class="picking-section__range range-from"></div>
               <div class="picking-section__range range-to"></div>
             </div>
@@ -182,20 +181,20 @@
             <legend class="picking-section__header">Жирность:</legend>
             <ul class="picking-section__list fat-content">
               <li class="picking-section__item fat-content-item">
-                <input class="visually-hidden" type="radio" name="fat-content" id="0%" value="0%">
-                <label class="picking-section__label fat-content__label" for="0%">0%</label>
+                <input class="visually-hidden" type="radio" name="fat-content" id="0%" value="0%" tabindex="-1">
+                <label class="picking-section__label fat-content__label" for="0%" tabindex="0">0%</label>
               </li>
               <li class="picking-section__item fat-content-item">
-                <input class="visually-hidden" type="radio" name="fat-content" id="to_10%" value="to_10%" checked>
-                <label class="picking-section__label fat-content__label" for="to_10%">до 10%</label>
+                <input class="visually-hidden" type="radio" name="fat-content" id="to_10%" value="to_10%" tabindex="-1" checked>
+                <label class="picking-section__label fat-content__label" for="to_10%" tabindex="0">до 10%</label>
               </li>
               <li class="picking-section__item fat-content-item">
-                <input class="visually-hidden" type="radio" name="fat-content" id="to_30%" value="to_30%">
-                <label class="picking-section__label fat-content__label" for="to_30%">до 30%</label>
+                <input class="visually-hidden" type="radio" name="fat-content" id="to_30%" value="to_30%" tabindex="-1">
+                <label class="picking-section__label fat-content__label" for="to_30%" tabindex="0">до 30%</label>
               </li>
               <li class="picking-section__item fat-content-item">
-                <input class="visually-hidden" type="radio" name="fat-content" id="from_30%" value="from_30%">
-                <label class="picking-section__label fat-content__label" for="from_30%">выше 30%</label>
+                <input class="visually-hidden" type="radio" name="fat-content" id="from_30%" value="from_30%" tabindex="-1">
+                <label class="picking-section__label fat-content__label" for="from_30%" tabindex="0">выше 30%</label>
               </li>
             </ul>
           </fieldset>
@@ -204,24 +203,24 @@
             <legend class="picking-section__header">Наполнители:</legend>
             <ul class="picking-section__list fillers">
               <li class="picking-section__item fillers-item">
-                <input class="visually-hidden" type="checkbox" id="chocolate" value="chocolate" checked>
-                <label class="picking-section__label fillers__label" for="chocolate">шоколадные</label>
+                <input class="visually-hidden" type="checkbox" id="chocolate" value="chocolate" tabindex="-1" checked>
+                <label class="picking-section__label fillers__label" for="chocolate" tabindex="0">шоколадные</label>
               </li>
               <li class="picking-section__item fillers-item">
-                <input class="visually-hidden" type="checkbox" id="sugar" value="sugar" checked>
-                <label class="picking-section__label fillers__label" for="sugar">сахарные присыпки</label>
+                <input class="visually-hidden" type="checkbox" id="sugar" value="sugar" tabindex="-1" checked>
+                <label class="picking-section__label fillers__label" for="sugar" tabindex="0">сахарные присыпки</label>
               </li>
               <li class="picking-section__item fillers-item">
-                <input class="visually-hidden" type="checkbox" id="fruit" value="fruit">
-                <label class="picking-section__label fillers__label" for="fruit">фрукты</label>
+                <input class="visually-hidden" type="checkbox" id="fruit" value="fruit" tabindex="-1">
+                <label class="picking-section__label fillers__label" for="fruit" tabindex="0">фрукты</label>
               </li>
               <li class="picking-section__item fillers-item">
-                <input class="visually-hidden" type="checkbox" id="syrup" value="syrup">
-                <label class="picking-section__label fillers__label" for="syrup">сиропы</label>
+                <input class="visually-hidden" type="checkbox" id="syrup" value="syrup" tabindex="-1">
+                <label class="picking-section__label fillers__label" for="syrup" tabindex="0">сиропы</label>
               </li>
               <li class="picking-section__item fillers-item">
-                <input class="visually-hidden" type="checkbox" id="jam" value="jam">
-                <label class="picking-section__label fillers__label" for="jam">джемы</label>
+                <input class="visually-hidden" type="checkbox" id="jam" value="jam" tabindex="-1">
+                <label class="picking-section__label fillers__label" for="jam" tabindex="0">джемы</label>
               </li>
             </ul>
           </fieldset>
