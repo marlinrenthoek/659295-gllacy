@@ -1,4 +1,4 @@
-var link = document.querySelector(".сontact-info__link");
+var link = document.querySelector(".contact-info__link");
 var popup = document.querySelector(".feedback-form");
 var close = document.querySelector(".feedback-form__close-button");
 var login = popup.querySelector("[name=name]");
