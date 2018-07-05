@@ -16,13 +16,13 @@
 	    <a class="main-navigation__logo" href="index.html"><img class="gllacy-logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина «Gllacy shop»"></a>
         <ul class="site-navigation">
           <li class="site-navigation__item display-dropdown">
-            <a class="site-navigation__link --active" href="catalog.html">Каталог</a>
+            <a class="site-navigation__link site-navigation__link-active" href="catalog.html">Каталог</a>
             <ul class="site-navigation__dropdown-list">
               <li class="site-navigation__dropdown-item">
                 <a class="site-navigation__dropdown-link font-bold" href="#">Новинки</a>
               </li>
               <li class="site-navigation__dropdown-item">
-                <a class="site-navigation__dropdown-link --active">Сливочное</a>
+                <a class="site-navigation__dropdown-link site-navigation__dropdown-link-active">Сливочное</a>
               </li>
               <li class="site-navigation__dropdown-item">
                 <a class="site-navigation__dropdown-link" href="#">Щербеты</a>
@@ -141,7 +141,7 @@
             <a class="breadcrumbs__link" href="#">Каталог</a> 
           </li>
             <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link --active">Сливочное</a>
+            <a class="breadcrumbs__link breadcrumbs__link-active">Сливочное</a>
           </li>
         </ul>
       </nav>
@@ -308,7 +308,7 @@
 			<div class="features__item-container">
 			  <img class="features__image" src="img/menthol.jpg" alt="Сливочноe с ментоловым сиропом">
               <p class="features__price">435<span>/кг</span></p>
-              <a class="features__title" href="#">Сливочноe с ментоловым сиропом</a>
+              <a class="features__title short-text" href="#">Сливочноe с ментоловым сиропом</a>
               <a class="features__link button" href="#">Быстрый просмотр</a>
 			</div>
           </li>
@@ -335,7 +335,10 @@
         <h2 class="visually-hidden">Навигация по номерам страниц</h2>
         <ul class="pagination__list">
           <li class="pagination__item">
-            <a class="pagination__link --active">1</a>
+            <a class="pagination__link prev-disabled"><span class="visually-hidden">Предыдущая страница</span></a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link-active">1</a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link" href="#">2</a>
@@ -349,6 +352,9 @@
           <li class="pagination__item">
             <a class="pagination__link" href="#">5</a>
           </li>
+          <li class="pagination__item">
+            <a class="pagination__link next" href="#"><span class="visually-hidden">Cледующая страница</span></a>
+            </li>
         </ul>
       </nav>
     </main>
