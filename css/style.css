@@ -3,7 +3,7 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -104,6 +104,7 @@ img {
 }
 
 .site-navigation {
+  width: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,6 +437,7 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 400px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1208,12 +1210,11 @@ img {
   line-height: 18px;
   font-weight: 500;
   color: #fff;
-  background-color: rgba(248, 247, 244, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   background-image: none;
-  border: 2px solid #fff;
+  border: 0;
   border-radius: 25px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: inset 0px 0px 0px 2px #fff;
   text-shadow: none;
   cursor: pointer;
   outline: none;
@@ -1221,7 +1222,7 @@ img {
 
 .picking-section__button:hover,
 .picking-section__button:focus {
-  color: black;
+  color: #323232;
   background-color: #fbfcfb;
   background-image: none;
   -webkit-box-shadow: none;
@@ -1230,9 +1231,11 @@ img {
 }
 
 .picking-section__button:active {
+  color: #323232;
   background-color: #eaeaea;
-  -webkit-box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
-          box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+  -webkit-box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+          box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+  border: 0;        
   text-shadow: none;
   outline: none;
 }
@@ -1245,6 +1248,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1261,6 +1265,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1277,12 +1282,16 @@ img {
   background-color: #611323;
   background-image: url(../img/raspberries-background.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
  }
 
 .special-offers__item:nth-child(2) {
   background-color: #45291b;
   background-image: url(../img/chocolate-background.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
 }
 
 .special-offers__header {
@@ -1467,6 +1476,7 @@ img {
 }
 
 .pagination {
+  padding: 0;
   margin-top: 51px;
   margin-bottom: -10px;
 }
@@ -1631,6 +1641,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; 
+  align-items: flex-start;
   margin-bottom: 40px;  
 }
 
@@ -1643,6 +1654,7 @@ img {
   background-color: #fff;
   background-image: url(../img/strawberry-background.jpg);
   background-repeat: no-repeat; 
+  background-size: cover;
   border-radius: 15px;
 }
 
@@ -1971,6 +1983,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 300px;
   margin: 0;
   margin-right: 208px;
   padding: 0;
@@ -2019,6 +2032,7 @@ img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 655px;
   padding-top: 16px;
   margin-right: 225px;
   list-style: none;
@@ -2065,6 +2079,10 @@ img {
   top: 2px;
   left: 6px;
   background-image: url(../img/heart.png)
+}
+
+.web-studio-info {
+  width: 367px;
 }
 
 .web-studio-info__logo-link {
