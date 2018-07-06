@@ -22,22 +22,18 @@ img {
   height: auto;
 }
 
-.switch-color {
-  background-image: none;
-  background-color: transparent;
-}
-
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
 
-.white-background:hover,
-.white-background:hover,
-.white-background:focus {
-  color: #e84d37;
-  -webkit-text-decoration-color: #e84d37;
-          text-decoration-color: #e84d37;
+@keyframes appearing {
+  0% {
+    transform:translateY(-100%);
+  }
+  100% {
+    transform:translateY(0%);
+  }
 }
 
 .center {
@@ -139,6 +135,11 @@ img {
 .slider-control:active,
 .slider-control:focus {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.switch-color {
+  background-image: none;
+  background-color: transparent;
 }
 
 .control-1:checked ~ .site-wrapper .slider-control-1 {
@@ -331,7 +332,7 @@ img {
   border-radius: 20px;
 }
 
-.site-navigation__item:hover .site-navigation__link-active-active {
+.site-navigation__item:hover .site-navigation__link-active {
   color: #fff;
   background-color: #d07058;
 }
@@ -530,14 +531,14 @@ img {
 .login-form-container {
   position: relative;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .interactive-menu__field-search::-webkit-input-placeholder,
 .interactive-menu__field-mail::-webkit-input-placeholder,
 .interactive-menu__field-password::-webkit-input-placeholder {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 24px;
   font-weight: 400;
   color: #818181;
   opacity: 1;
@@ -547,7 +548,7 @@ img {
 .interactive-menu__field-mail:-ms-input-placeholder,
 .interactive-menu__field-password:-ms-input-placeholder {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 24px;
   font-weight: 400;
   color: #818181;
   opacity: 1;
@@ -557,7 +558,7 @@ img {
 .interactive-menu__field-mail::-ms-input-placeholder,
 .interactive-menu__field-password::-ms-input-placeholder {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 24px;
   font-weight: 400;
   color: #818181;
   opacity: 1;
@@ -567,7 +568,7 @@ img {
 .interactive-menu__field-mail::placeholder,
 .interactive-menu__field-password::placeholder {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 24px;
   font-weight: 400;
   color: #818181;
   opacity: 1;
@@ -611,8 +612,8 @@ img {
 .feedback-form__field-mail,
 .feedback-form__field-textarea {
   padding: 14px;
-  padding-top: 12px; 
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
@@ -711,6 +712,14 @@ img {
   text-decoration: underline;
   -webkit-text-decoration-color: #323232;
           text-decoration-color: #323232;
+}
+
+.white-background:hover,
+.white-background:hover,
+.white-background:focus {
+  color: #e84d37;
+  -webkit-text-decoration-color: #e84d37;
+          text-decoration-color: #e84d37;
 }
 
 .basket-item:hover .interactive-menu__basket-form {
@@ -1156,7 +1165,7 @@ img {
   background-image: url(../img/radio-off.png);
 }
 
-.fat-content input:checked ~ .fat-content__label::before {
+.fat-content__input:checked ~ .fat-content__label::before {
   background-image: url(../img/radio-on.png);
 }
 
@@ -1185,7 +1194,7 @@ img {
   background-image: url(../img/checkbox-off.png);
 }
 
-.fillers input:checked ~ .fillers__label::before {
+.fillers__input:checked ~ .fillers__label::before {
   background-image: url(../img/checkbox-on.png);
 }
 
@@ -1460,6 +1469,10 @@ img {
 .pagination {
   margin-top: 51px;
   margin-bottom: -10px;
+}
+
+.pagination.center {
+  overflow: hidden;
 }
 
 .pagination__list {
@@ -1817,21 +1830,38 @@ img {
   padding: 10px 28px;
 }
 
+.feedback-form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.3);  
+}
+
+.feedback-form-overlay-show {
+  display: block;
+}
+
 .feedback-form {
   display: none;
   position: fixed;
-  top: 70px;
-  left: 31%;
-  z-index: 10;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  margin-top: -239px;
+  margin-left: -222px;
   padding: 17px 24px;
   padding-bottom: 26px;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.3);
 }
 
 .show-feedback-form {
   display: block;
+  animation-name: appearing;
+  animation-duration: 0.5s;
 }
 
 .feedback-form__close-button {
@@ -1992,9 +2022,6 @@ img {
   padding-top: 16px;
   margin-right: 225px;
   list-style: none;
-}
-
-.additional-information__column {
 }
 
 .additional-information__link {
