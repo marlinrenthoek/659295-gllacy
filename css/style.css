@@ -103,17 +103,6 @@ img {
   margin: -1px;
 }
 
-.site-navigation {
-  width: 550px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .slider-controls {
   position: absolute;
   top: 469px;
@@ -276,16 +265,27 @@ img {
           filter: drop-shadow(0 0 2px #e25a38);
 }
 
+
 .site-navigation {
-  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-wrap: wrap;
+  width: 550px;
   padding: 0;
   padding-top: 20px;
   margin: 0;
+  list-style: none;
 }
 
 .site-navigation__item {
   position: relative;
   margin-right: 2px; 
+  margin-bottom: 15px;
 }
 
 .site-navigation__item:last-child {
@@ -299,6 +299,7 @@ img {
   line-height: 18px;
   font-weight: bold;
   color: #fff;
+  white-space: nowrap;
   -webkit-text-decoration-color: rgba(234, 234, 234, 0.3);
           text-decoration-color: rgba(234, 234, 234, 0.3);
   outline: none;
@@ -436,10 +437,12 @@ img {
           flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   width: 400px;
   padding: 0;
   margin: 0;
+  margin-bottom: 15px;
   list-style: none;
 }
 
@@ -1201,7 +1204,7 @@ img {
 }
 
 .picking-section__button {
-  padding: 7px 26px;
+  padding: 7px 29px;
   -moz-padding-start: 28px;
   -moz-padding-end: 28px;
   margin-top: 22px;
@@ -1476,8 +1479,7 @@ img {
 }
 
 .pagination {
-  padding: 0;
-  margin-top: 51px;
+  margin-top: -5px;
   margin-bottom: -10px;
 }
 
@@ -1967,6 +1969,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1983,9 +1986,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  flex-wrap: wrap;
   width: 300px;
   margin: 0;
-  margin-right: 208px;
   padding: 0;
   padding-top: 17px;
   list-style: none;
@@ -2032,9 +2035,8 @@ img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 655px;
+  width: 470px;
   padding-top: 16px;
-  margin-right: 225px;
   list-style: none;
 }
 
@@ -2082,7 +2084,7 @@ img {
 }
 
 .web-studio-info {
-  width: 367px;
+  width: 190px;
 }
 
 .web-studio-info__logo-link {
