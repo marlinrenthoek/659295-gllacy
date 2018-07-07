@@ -410,7 +410,9 @@ img {
   color: #323232;
 }
 
-.site-navigation__dropdown-link-active {
+.site-navigation__dropdown-link-active,
+.site-navigation__dropdown-link-active:hover,
+.site-navigation__dropdown-link-active:active {
   background-color: #d07058;
   color: #fff;
 }
@@ -449,6 +451,7 @@ img {
 .interactive-menu__item {
   position: relative;
   margin-right: 7px;
+  margin-bottom: 15px;
   cursor: pointer;
 }
 
@@ -503,7 +506,8 @@ img {
 
 .interactive-menu__item:hover .interactive-menu__link,
 .interactive-menu__item:active .interactive-menu__link,
-.interactive-menu__link:focus {
+.interactive-menu__link:focus,
+.basket-full__link {
   color: #323232;
   background-color: #f8f7f4;
 }
@@ -832,7 +836,7 @@ img {
 
 .schedule-and-contacts {
   position: absolute;
-  top: 65px;
+  bottom: -37px;
   right: 0;
   width: 175px;
   -ms-flex-item-align: end;
