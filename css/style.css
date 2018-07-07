@@ -176,17 +176,17 @@ img {
   background-image: url("../img/group3.png");
 }
 
-#slide-1:checked ~ .site-wrapper {
+.control-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/group1.png");
 }
 
-#slide-2:checked ~ .site-wrapper {
+.control-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/group2.png");
 }
 
-#slide-3:checked ~ .site-wrapper {
+.control-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/group3.png");
 }
