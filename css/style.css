@@ -49,6 +49,18 @@ img {
   }
 }
 
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0); 
+  }
+  10%, 30%, 50%, 70%, 90% { 
+    transform: translateX(-10px); 
+  }
+  20%, 40%, 60%, 80% { 
+    transform: translateX(10px); 
+  }
+} 
+
 .center {
   width: 1200px;
   margin: 0 auto;
@@ -1165,6 +1177,10 @@ img {
   opacity: 0.4;
 }
 
+.picking-section__label:focus::before {
+  filter: drop-shadow(0 0 2px #91260b);
+}
+
 .fat-content {
   padding-right: 18px;
 }
@@ -1376,13 +1392,10 @@ img {
 
 .features__item {
   position: relative;
-  margin-bottom: 2px;
   width: 293px;
   height: 360px;
-}
-
-.hit {
-  height: 340px;
+  padding: 5px 13px;
+  margin-bottom: 2px;
 }
 
 .hit::before {
@@ -1391,7 +1404,7 @@ img {
   z-index: 4;
   width: 61px;
   height: 61px;
-  top: 7px;
+  top: 5px;
   left: 13px;
   background-image: url(../img/hit.png);
   background-repeat: no-repeat;
@@ -1428,7 +1441,7 @@ img {
   
 .features__price {
   position: absolute;
-  top: 217px;
+  top: 214px;
   margin: 0;
   padding: 0;
   font-size: 45px;
@@ -1460,7 +1473,7 @@ img {
       -ms-grid-row-align: center;
       align-self: center;
   display: block;
-  margin-bottom: 14px;
+  padding-bottom: 14px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -1472,8 +1485,8 @@ img {
 }
 
 .features__item:hover .features__title {
-    padding-top: 5px;
-    -webkit-padding-before: 6px;
+  padding-top: 5px;
+  -webkit-padding-before: 6px;
 }
 
 .features__title:hover, 
@@ -1904,6 +1917,11 @@ img {
           animation-name: appearing;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
+}
+
+.form-incorrect {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .feedback-form__close-button {
